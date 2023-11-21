@@ -73,7 +73,7 @@ padding: 15px;
 
 .navegator .links > ul > li > a{
     transition: all 300ms ease;
-    font-size: 16px;
+    font-size: 20px;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
