@@ -1,6 +1,9 @@
 :root{
  --yellowcolor: #e0bd21;
  --titlefontsize: 30px;
+ --backgroundcolor: #200005;
+ --letterscolor: #fff6f9;
+ --colorbasese: #000000;
 }
 
 *{
@@ -10,23 +13,35 @@ box-sizing: border-box;
 }
 
 body{
-background-color: #e0bd21;
+background-color: var(--colorbasese);
 }
 
 .header {
 
-    background-color: #f92;
+    background-color: var(--backgroundcolor);
     height: 80px;
+    position: relative;
    
 }
+.header .title{
+    display: flex;
+    color: var(--letterscolor);
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
 .navegator{
     margin-bottom: 20px;
+    color: var(--letterscolor);
 }
 
 .main{
     grid-area: main;
-    background-color: rgb(207, 84, 119);
+    background-color: var(--backgroundcolor);
     padding: 50px;
+    color: var(--letterscolor);
 }
 
 .main .main_container{
@@ -46,15 +61,17 @@ background-color: #e0bd21;
 }
 
 .sidebar{
-    background-color: thistle;
+    background-color: var(--backgroundcolor);
     grid-area: sidebar;
     padding: 50px;
+    
+    color: var(--letterscolor);
    
 }
 
 .navegator{
     width: 98%;
-    background-color: aquamarine;
+    background-color: rgb(77, 80, 79);
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
