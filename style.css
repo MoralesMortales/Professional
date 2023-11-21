@@ -22,3 +22,9 @@ background-color: #e0bd21;
 .main .main_container{
  background-color: rgb(207, 84, 119)
 }
+
+.sidebar{
+    background-color: thistle;
+    padding: 50px;
+}
+
