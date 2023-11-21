@@ -58,6 +58,7 @@ background-color: #e0bd21;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .navegator .links ul{
