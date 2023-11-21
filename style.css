@@ -17,14 +17,55 @@ background-color: #e0bd21;
 
     background-color: #f92;
     height: 80px;
+   
+}
+.navegator{
+    margin-bottom: 20px;
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(207, 84, 119);
+    padding: 50px;
 }
 
 .main .main_container{
- background-color: rgb(207, 84, 119)
+
+
+
+}
+
+.main_sidebar{
+    width: 90%;
+    margin:  0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1, auto;
+    grid-template-areas: "main main main sidebar";
+    grid-gap: 2%;
 }
 
 .sidebar{
     background-color: thistle;
+    grid-area: sidebar;
     padding: 50px;
+   
+}
+
+.navegator{
+    width: 98%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.navegator .links ul{
+list-style-type: none;
+display: flex;
+flex-direction: row;
+gap: 30px;
+
+
 }
 
