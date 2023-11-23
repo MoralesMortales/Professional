@@ -246,7 +246,7 @@ body {
         -o-transform: scale(0.2);
         font-size: 15px;
         background-color: #000000;
-        padding: 15px;
+        padding: 12px;
         border-radius: 0.55em;
         color: var(--letterscolor);
         -webkit-border-radius: 0.55em;
