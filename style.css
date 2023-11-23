@@ -68,7 +68,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 39px;
+    gap: 25px;
     padding: 15px;
 
 }
@@ -223,9 +223,11 @@ body {
 
     .navegator .links .as{
         display: grid;
+        min-width: 358px;
         grid-template-columns: repeat(2,2fr);
         grid-template-rows: 2,2fr;
         grid-template-areas: "a1 a2" "a3 a4";
+
         
     }
 
