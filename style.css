@@ -183,7 +183,6 @@ body {
 
 
     .main_sidebar {
-        min-width: 160px;
         grid-template-rows: 2, auto;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "main main main main" "sidebar sidebar sidebar sidebar";
@@ -217,11 +216,11 @@ body {
     .navegator .links .as  .a_4 {
         grid-area: a4;
         margin: 0 auto;
+        text-wrap: nowrap;
     }
 
     .navegator .links .as{
         display: grid;
-        min-width: 358px;
         grid-template-columns: repeat(2,2fr);
         grid-template-rows: 2,2fr;
         grid-template-areas: "a1 a2" "a3 a4";
