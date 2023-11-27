@@ -15,7 +15,8 @@
 }
 
 body {
-    background-color: var(--colorbasese);
+    background-image: url(recurses/download\ \(2\).jpg);
+    background-size: auto;
 }
 
 /* HEADER */
@@ -181,6 +182,9 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    body{
+        width: 100%;
+    }
 
     .main_sidebar {
         grid-template-rows: 2, auto;
@@ -188,10 +192,25 @@ body {
         grid-template-areas: "main main main main" "sidebar sidebar sidebar sidebar";
     }
 
-    .main {
-        background-color: red;
-
+    .main{
+        background: none;
     }
+
+    .main .main_container .title{
+      background: rgb(202, 18, 18);
+      padding: 2px 10px;
+      border-radius: 0.33em;
+      -webkit-border-radius: 0.33em;
+      -moz-border-radius: 0.33em;
+      -ms-border-radius: 0.33em;
+      -o-border-radius: 0.33em;
+}
+
+.main .submain_content{
+
+    background-color: rgba(141, 74, 47, 0.884);
+    padding: 10px;
+}
 
     .sidebar {
         background-color: green;
