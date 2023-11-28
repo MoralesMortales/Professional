@@ -111,7 +111,6 @@ body {
 
 .main {
     grid-area: main;
-    background-color: var(--backgroundcolor);
     padding: 50px;
     color: var(--letterscolor);
     max-width: 1280PX;
@@ -121,7 +120,6 @@ body {
     margin: 20px auto;
     width: 60%;
     height: 20%;
-    background-color: rgb(122, 103, 103);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,14 +128,17 @@ body {
     -moz-border-radius: 0.9em;
     -ms-border-radius: 0.9em;
     -o-border-radius: 0.9em;
+    background: linear-gradient(rgba(122, 103, 103, 0),rgba(175, 45, 45, 1));
 }
 
-.imgage_Section_1 .img_one{
+
+.imgage_Section_1 .img_one {
     width: 20%;
     height: 20%;
     margin-bottom: 10px;
 }
-.imgage_Section_1 .image_title{
+
+.imgage_Section_1 .image_title {
 
     margin: 9px;
 }
@@ -182,7 +183,7 @@ body {
 
 @media screen and (max-width: 768px) {
 
-    body{
+    body {
         width: 100%;
     }
 
@@ -192,25 +193,25 @@ body {
         grid-template-areas: "main main main main" "sidebar sidebar sidebar sidebar";
     }
 
-    .main{
+    .main {
         background: none;
     }
 
-    .main .main_container .title{
-      background: rgb(202, 18, 18);
-      padding: 2px 10px;
-      border-radius: 0.33em;
-      -webkit-border-radius: 0.33em;
-      -moz-border-radius: 0.33em;
-      -ms-border-radius: 0.33em;
-      -o-border-radius: 0.33em;
-}
+    .main .main_container .title {
+        background: var(--backgroundcolor);
+        padding: 2px 10px;
+        border-radius: 0.33em;
+        -webkit-border-radius: 0.33em;
+        -moz-border-radius: 0.33em;
+        -ms-border-radius: 0.33em;
+        -o-border-radius: 0.33em;
+    }
 
-.main .submain_content{
+    .main .submain_content {
 
-    background-color: rgba(141, 74, 47, 0.884);
-    padding: 10px;
-}
+        background-color: transparent;
+        padding: 20px;
+    }
 
     .sidebar {
         background-color: green;
@@ -232,19 +233,19 @@ body {
         margin: 0 auto;
     }
 
-    .navegator .links .as  .a_4 {
+    .navegator .links .as .a_4 {
         grid-area: a4;
         margin: 0 auto;
         text-wrap: nowrap;
     }
 
-    .navegator .links .as{
+    .navegator .links .as {
         display: grid;
-        grid-template-columns: repeat(2,2fr);
-        grid-template-rows: 2,2fr;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: 2, 2fr;
         grid-template-areas: "a1 a2" "a3 a4";
 
-        
+
     }
 
     .navegator .links>ul>li>a {
@@ -255,7 +256,7 @@ body {
         -ms-transition: all 300ms ease;
         -o-transition: all 300ms ease;
     }
-    
+
     .navegator .links>ul>li>a:hover {
         transform: scale(0.2);
         -webkit-transform: scale(0.2);
@@ -271,9 +272,9 @@ body {
         -moz-border-radius: 0.59em;
         -ms-border-radius: 0.59em;
         -o-border-radius: 0.59em;
-}
-    
-    
+    }
+
+
 
 
 
