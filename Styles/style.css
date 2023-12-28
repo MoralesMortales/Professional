@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --yellowcolor: #e0bd21;
     --titlefontsize: 30px;
     --backgroundcolor: #200005;
@@ -8,18 +8,21 @@
     --otherbackground: #333333;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     background-image: url(recurses/download\ \(2\).jpg);
     background-size: auto;
 }
 
-/* HEADER */
+TODO:HEADER
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .header {
     display: flex;
@@ -38,7 +41,7 @@ body {
 
 }
 
-/* NAVEGATOR */
+TODO:NAVEGATOR
 
 
 .navegator {
@@ -51,7 +54,6 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
     height: 100%;
-    position: relative;
 }
 
 
@@ -60,6 +62,7 @@ body {
     background-color: #d0d3c5;
     padding: 10px;
 
+    position: fixed;
 
 }
 
@@ -107,7 +110,9 @@ body {
     display: none;
 }
 
-/* MAIN */
+/*
+
+TODO:MAIN
 
 .main {
     grid-area: main;
@@ -154,7 +159,7 @@ body {
     grid-gap: 2%;
 }
 
-/* SIDEBAR */
+TODO:SIDEBAR
 
 .sidebar {
     background-color: var(--backgroundcolor);
@@ -274,9 +279,16 @@ body {
         -o-border-radius: 0.59em;
     }
 
-
-
-
-
-
 }
+ */body{
+    background-color: #000;
+}
+ .main_img_section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0)),url("../recurses/main.jpg");
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(90px);
+    padding-bottom: 90px;
+    }
