@@ -280,8 +280,9 @@ TODO:SIDEBAR
     }
 
 }
- */body{
-    background-color: #000;
+ */
+ body{
+    background-color: #ffffff9c;
 }
  .main_img_section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0)),url("../recurses/main.jpg");
@@ -291,4 +292,5 @@ TODO:SIDEBAR
     background-position: center;
     backdrop-filter: blur(90px);
     padding-bottom: 90px;
+    margin-bottom: 10px;
     }
