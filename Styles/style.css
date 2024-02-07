@@ -8,27 +8,44 @@
 .header{
     background-color: aliceblue;
     height: 50px;
-    padding: 3em;
+    padding: 1em;
     grid-area: header;
+
+        font-family: "Besley", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
 }
 
 .description{
     grid-area: description;
     background-color: yellow;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    height: 6em;
 }
 
 .themain{
     background-color: #afdb5e9f;
     grid-area: main;
+    padding: 1.5em;
+    
 }
 
 .sidebar{
     background-color: peru;
     grid-area: side;
-    background-image: url(../recurses/download\ \(2\).jpg);
+    margin-left: 0.5em;
 }
 
 body{
+    margin: 1em;
     background-color: #a19e9ce3;
     display: grid;
     grid-template-rows: 4, auto;
