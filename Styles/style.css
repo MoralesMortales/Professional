@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,13 +45,60 @@
 }
 
 body{
+    height: 100%;
     margin: 1em;
     background-color: #a19e9ce3;
     display: grid;
     grid-template-rows: 4, auto;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: "header header header header" 
-                        "description description description description" 
-                        "main main main side"
-                        "main main main side"; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "header header header" 
+                        "description  description description" 
+                        "main main  side"
+                        "notech tech side"; 
+}
+.licontainer{
+    overflow-y: hidden;
+}
+.theabilities{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 20em;
+    overflow-y: hidden;
+}
+
+{
+}
+
+.abilities > .technical{
+}
+
+.theabilities:hover {
+    overflow-y: scroll;
+}
+
+.theabilities:hover::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.theabilities:hover::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.theabilities:hover::-webkit-scrollbar-button:increment,.theabilities::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.theabilities:hover::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.theabilities:hover::-webkit-scrollbar-thumb {
+    background-color: #aa4141;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.theabilities:hover::-webkit-scrollbar-track {
+    border-radius: 10px;
 }
