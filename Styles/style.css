@@ -27,7 +27,7 @@
 
 .description {
   grid-area: description;
-  background-color: yellow;
+  background-color: rgb(206, 255, 184);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding-right: 1em;
@@ -37,13 +37,13 @@
 }
 
 .themain {
-  background-color: #afdb5e9f;
+  background-color: #faffef9f;
   grid-area: main;
   padding: 1.5em;
 }
 
 .sidebar {
-  background-color: peru;
+  background-color: rgb(206, 255, 184);
   grid-area: side;
   margin-left: 0.5em;
 }
@@ -66,6 +66,8 @@ body {
   -moz-transition: ease-in 0.4s;
   -ms-transition: ease-in 0.4s;
   -o-transition: ease-in 0.4s;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 .licontainer {
   overflow-y: hidden;
@@ -79,10 +81,6 @@ body {
   width: 100%;
 }
 
-.headeTop {
-  display: flex;
-  background-color: #aa4141;
-}
 
 .soft:hover ,.technical:hover{
   overflow-y: scroll;
@@ -112,9 +110,9 @@ body {
 }
 
 .soft:hover::-webkit-scrollbar-thumb, .technical:hover::-webkit-scrollbar-thumb {
-  background-color: #aa4141;
+  background-color: #ffffff;
   border-radius: 20px;
-  border: 2px solid #f1f2f3;
+  border: 2px solid #000000;
 }
 
 .soft:hover::-webkit-scrollbar-track, .technical:hover::-webkit-scrollbar-track {
@@ -133,33 +131,87 @@ body {
   list-style: none;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  
 }
 
 .description > ul > li {
-  background-color: rgb(255, 0, 0);
+  width: 25%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1em;
+}
+
+.description > ul > li > a{
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
   transition: ease 0.4s;
   -webkit-transition: ease 0.4s;
   -moz-transition: ease 0.4s;
   -ms-transition: ease 0.4s;
   -o-transition: ease 0.4s;
-  border-radius: 90em;
-  -webkit-border-radius: 90em;
-  -moz-border-radius: 90em;
-  -ms-border-radius: 90em;
-  -o-border-radius: 90em;
+  border-radius:7em;
+  -webkit-border-radius:7em;
+  -moz-border-radius:7em;
+  -ms-border-radius:7em;
+  -o-border-radius:7em;
+  width: 100%;
 }
 
-.description > ul > li > a {
-  background-color: rgb(255, 0, 0);
+.description > ul > li > button {
+    background-color: rgb(255, 255, 255);
+    
+    
+    width: 100%;
+    height: 100%;
+    
+    transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    border-radius: 10em;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    -ms-border-radius: 10em;
+    -o-border-radius: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-radius: 10em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1em;
+    
+    
+}
+
+
+.description > ul > li > a > span{
+ 
+  background-color: transparent;
   transition: ease 0.7s;
   -webkit-transition: ease 0.7s;
   -moz-transition: ease 0.7s;
   -ms-transition: ease 0.7s;
   -o-transition: ease 0.7s;
+  transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+ 
+}
+
+.description > ul > li > a {
+  background-color: rgb(255, 255, 255);
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  width: 100%;
   transition: ease-in 0.4s;
   -webkit-transition: ease-in 0.4s;
   -moz-transition: ease-in 0.4s;
@@ -171,11 +223,15 @@ body {
   -ms-border-radius: 90em;
   -o-border-radius: 90em;
   border: #121212 solid 2px;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
 
 }
-
-.description > ul > li > a:hover {
-  background-color: rgb(220, 226, 231);
+ 
+ .description > ul > li > a:hover{
+  background-color: rgb(207, 213, 218);
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -186,43 +242,25 @@ body {
   -moz-transition: ease 0.4s;
   -ms-transition: ease 0.4s;
   -o-transition: ease 0.4s;
+  
 }
 
-.description > ul > li > button {
-  background-color: rgb(255, 0, 0);
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transition: ease 0.4s;
-  -webkit-transition: ease 0.4s;
-  -moz-transition: ease 0.4s;
-  -ms-transition: ease 0.4s;
-  -o-transition: ease 0.4s;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  border-radius: 90em;
-  -webkit-border-radius: 90em;
-  -moz-border-radius: 90em;
-  -ms-border-radius: 90em;
-  -o-border-radius: 90em;
+
+.description > ul > li > button > img{
+  display: inline-block;
+  height: 10%;
+  width: 10%;
+
 }
 
 .description > ul > li > button:hover {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(207, 213, 218);
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
-  transition: ease 0.4s;
-  -webkit-transition: ease 0.4s;
-  -moz-transition: ease 0.4s;
-  -ms-transition: ease 0.4s;
-  -o-transition: ease 0.4s;
+  cursor: pointer;
 }
 
 body.night-mode {
@@ -246,9 +284,15 @@ body.night-mode > header {
 }
 
 .post{
-    background-color: #12ff32;
+    background-color: #ffffffa1;
     padding: 1.3em;
     margin: 0.4em;
+    border: solid black 3px;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
 }
 
 .an_image{
@@ -270,10 +314,31 @@ body.night-mode > header {
 }
 
 
-@media (min-width: 300px) and (max-width: 2560px) {
-   
-    *{
-    background-color: rgb(255, 0, 0);
+@media screen and (max-width: 887px) {
+   body{
+    grid-template-rows: 5fr auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "header"
+    "description"
+    "main"
+    "notech"
+    "tech"
+    "side"
+    ;
+   }
+
+   .button_dark .theimage {
+    display: none;
+   }
+
+   .button_dark{
+    display: inline-block;
+    
+   }
+
+   .button_dark span{
+    margin: 0 auto;
    }
 }
 
