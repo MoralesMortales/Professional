@@ -66,8 +66,8 @@ body {
   -moz-transition: ease-in 0.4s;
   -ms-transition: ease-in 0.4s;
   -o-transition: ease-in 0.4s;
-  margin-right: 2em;
-  margin-left: 2em;
+  padding-left:2em;
+  padding-right: 2em;
 }
 .licontainer {
   overflow-y: hidden;
