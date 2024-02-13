@@ -334,9 +334,25 @@ body.night-mode > header {
     grid-area: tech;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 887px) {
-   body{
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+   .container{
+    display: grid;
     grid-template-rows: 5fr auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
@@ -347,6 +363,7 @@ body.night-mode > header {
     "tech"
     "side"
     ;
+  
    }
 
    .button_dark .theimage {
