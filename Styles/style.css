@@ -5,7 +5,7 @@
 }
 
 .header {
-  background-color: aliceblue;
+  background-color: #c8c8ff;
   height: 50px;
   padding: 1em;
   grid-area: header;
@@ -23,27 +23,37 @@
   -ms-transition: ease-in 0.2s;
   -o-transition: ease-in 0.2s;
   color: #121212;
+  border-radius: 5em 5em 1em 1em;
+  -webkit-border-radius: 5em 5em 1em 1em;
+  -moz-border-radius: 5em 5em 1em 1em;
+  -ms-border-radius: 5em 5em 1em 1em;
+  -o-border-radius: 5em 5em 1em 1em;
 }
 
 .description {
   grid-area: description;
-  background-color: rgb(206, 255, 184);
+  background-color: #8787fb;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding-right: 1em;
   padding-left: 1em;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
+  border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -ms-border-radius: 0.8em;
+  -o-border-radius: 0.8em;
 }
 
 .themain {
-  background-color: #faffef9f;
+  background-color: #c8c8ffe0;
   grid-area: main;
   padding: 1.5em;
 }
 
 .sidebar {
-  background-color: rgb(206, 255, 184);
+  background-color: #6565ff;
   grid-area: side;
   margin-left: 0.5em;
 }
@@ -51,7 +61,7 @@
 body {
   height: 100%;
   margin: 1em;
-  background-color: #a19e9ce3;
+  background-color: #0303b5;
   display: grid;
   grid-template-rows: 4, auto;
   grid-template-columns: repeat(3, 1fr);
@@ -59,7 +69,7 @@ body {
     "header header header"
     "description  description description"
     "main main  side"
-    "notech tech side";
+    "abilities abilities abilities";
 
   transition: ease-in 0.4s;
   -webkit-transition: ease-in 0.4s;
@@ -72,6 +82,7 @@ body {
 .licontainer {
   overflow-y: hidden;
 }
+
 .theabilities {
   display: flex;
   justify-content: space-around;
@@ -79,6 +90,7 @@ body {
   height: 20em;
   overflow-y: hidden;
   width: 100%;
+  grid-area: abilities;
 }
 
 
@@ -305,12 +317,21 @@ body.night-mode > header {
 .soft{
     background-color: wheat;
     width: 50%;
+    padding: 1em;
    
+}
+
+.soft
+
+.soft > ul > li {
+  padding-bottom: 0.8em;
+  
 }
 
 .technical{
     background-color: whitesmoke;
     width: 50%;
+    grid-area: tech;
 }
 
 
