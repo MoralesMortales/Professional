@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #c8c8ff;
+  height: 50px;
+  padding: 1em;
+  grid-area: header;
+  font-family: "Besley", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in 0.2s;
+  -webkit-transition: ease-in 0.2s;
+  -moz-transition: ease-in 0.2s;
+  -ms-transition: ease-in 0.2s;
+  -o-transition: ease-in 0.2s;
+  color: #121212;
+  border-radius: 5em 5em 1em 1em;
+  -webkit-border-radius: 5em 5em 1em 1em;
+  -moz-border-radius: 5em 5em 1em 1em;
+  -ms-border-radius: 5em 5em 1em 1em;
+  -o-border-radius: 5em 5em 1em 1em;
+}
+
+.description {
+  grid-area: description;
+  background-color: #8787fb;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -ms-border-radius: 0.8em;
+  -o-border-radius: 0.8em;
+}
+
+.themain {
+  background-color: #c8c8ffe0;
+  grid-area: main;
+  padding: 1.5em;
+}
+
+.sidebar {
+  background-color: #6565ff;
+  grid-area: side;
+  margin-left: 0.5em;
+}
+
+body {
+  height: 100%;
+  margin: 1em;
+  background-color: #0303b5;
+  display: grid;
+  grid-template-rows: 4, auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "description  description description"
+    "main main  side"
+    "abilities abilities abilities";
+
+  transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+  padding-left:2em;
+  padding-right: 2em;
+}
+.licontainer {
+  overflow-y: hidden;
+}
+
+.theabilities {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  height: 20em;
+  overflow-y: hidden;
+  width: 100%;
+  grid-area: abilities;
+}
+
+
+.soft:hover ,.technical:hover{
+  overflow-y: scroll;
+  padding: 1em;
+  transition: ease 0.4s;
+  -webkit-transition: ease 0.4s;
+  -moz-transition: ease 0.4s;
+  -ms-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
+}
+
+.soft:hover::-webkit-scrollbar, .technical:hover::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.soft:hover::-webkit-scrollbar:vertical,  .technical:hover::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.soft:hover::-webkit-scrollbar-button:increment, .technical:hover::-webkit-scrollbar-button:increment
+.soft::-webkit-scrollbar-button {
+  display: none;
+}
+
+.soft:hover::-webkit-scrollbar:horizontal, .technical:hover::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.soft:hover::-webkit-scrollbar-thumb, .technical:hover::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #000000;
+}
+
+.soft:hover::-webkit-scrollbar-track, .technical:hover::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.description > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.description > ul > li {
+  width: 25%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1em;
+}
+
+.description > ul > li > a{
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  transition: ease 0.4s;
+  -webkit-transition: ease 0.4s;
+  -moz-transition: ease 0.4s;
+  -ms-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
+  border-radius:7em;
+  -webkit-border-radius:7em;
+  -moz-border-radius:7em;
+  -ms-border-radius:7em;
+  -o-border-radius:7em;
+  width: 100%;
+}
+
+.description > ul > li > button {
+    background-color: rgb(255, 255, 255);
+    
+    
+    width: 100%;
+    height: 100%;
+    
+    transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    border-radius: 10em;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    -ms-border-radius: 10em;
+    -o-border-radius: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-radius: 10em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1em;
+    
+    
+}
+
+
+.description > ul > li > a > span{
+ 
+  background-color: transparent;
+  transition: ease 0.7s;
+  -webkit-transition: ease 0.7s;
+  -moz-transition: ease 0.7s;
+  -ms-transition: ease 0.7s;
+  -o-transition: ease 0.7s;
+  transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+ 
+}
+
+.description > ul > li > a {
+  background-color: rgb(255, 255, 255);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  width: 100%;
+  transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+  border-radius: 90em;
+  -webkit-border-radius: 90em;
+  -moz-border-radius: 90em;
+  -ms-border-radius: 90em;
+  -o-border-radius: 90em;
+  border: #121212 solid 2px;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+
+}
+ 
+ .description > ul > li > a:hover{
+  background-color: rgb(207, 213, 218);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: ease 0.4s;
+  -webkit-transition: ease 0.4s;
+  -moz-transition: ease 0.4s;
+  -ms-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
+  
+}
+
+
+.description > ul > li > button > img{
+  display: inline-block;
+  height: 10%;
+  width: 10%;
+
+}
+
+.description > ul > li > button:hover {
+  background-color: rgb(207, 213, 218);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer;
+}
+
+body.night-mode {
+  background-color: #121212;
+  color: #ffffff;
+  transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+}
+
+body.night-mode > header {
+  background-color: #461919;
+  color: #ffffff;
+  transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+}
+
+.post{
+    background-color: #ffffffa1;
+    padding: 1.3em;
+    margin: 0.4em;
+    border: solid black 3px;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.an_image{
+    width: 100%;
+    height: 100%;
+    border: #121212 solid  2px;
+    margin-top: 1em;
+}
+
+.soft{
+    background-color: wheat;
+    width: 50%;
+    padding: 1em;
+   
+}
+
+.soft
+
+.soft > ul > li {
+  padding-bottom: 0.8em;
+  
+}
+
+.technical{
+    background-color: whitesmoke;
+    width: 50%;
+    grid-area: tech;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 887px) {
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+   .container{
+    display: grid;
+    grid-template-rows: 5fr auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "header"
+    "description"
+    "main"
+    "notech"
+    "tech"
+    "side"
+    ;
+  
+   }
+
+   .button_dark .theimage {
+    display: none;
+   }
+
+   .button_dark{
+    display: inline-block;
+    
+   }
+
+   .button_dark span{
+    margin: 0 auto;
+   }
+}
+
