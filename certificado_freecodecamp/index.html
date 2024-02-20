@@ -1,0 +1,118 @@
+<!-- You should have a page title in an h1 element 
+
+Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+Inside the form element, you are presented with a textarea for additional comments
+Inside the form element, you are presented with a button with id of submit to submit all the inputs
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Activity from FreeCodeCamp</title>
+  </head>
+  <body>
+    <div class="container">
+       <header class="header">
+        <h1 id="title">Free Code Camp - Carlos Morales Activity</h1>
+        <p id="description">
+          This is a task provided by FreeCodeCamp in order to achive all their
+          requirements for their <strong> Web Design Certification</strong>.
+        </p>
+      </header>
+ 
+      <main>
+       <form action="index.html" class="first_form">
+          <label>
+            <h2>Name</h2>
+            <input
+              id="name-label"
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name" />
+          </label>
+          <label>
+            <h2>Email</h2>
+            <input
+              id="email-label"
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your e-mail" />
+          </label>
+          <label>
+            <h2>Age</h2>
+            <input
+              id="age-label"
+              type="number"
+              name="Age"
+              id="Age"
+              min="7"
+              max="110"
+              required
+              placeholder="Enter your age" />
+          </label>
+        </form>
+
+        <form action="index.html" class="second_form">
+          <h2>How many stars would you give to this website?</h2>
+          <div class="labels_2">
+            <label>
+              <input
+                type="radio"
+                name="stars"
+                value="1_Start"
+                class="input_2" />1 Star
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="stars"
+                value="2_Start"
+                class="input_2" />2 Star
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="stars"
+                value="3_Start"
+                class="input_2" />3 Star
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="stars"
+                value="4_Start"
+                class="input_2" />4 Star
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="stars"
+                value="5_Start"
+                class="input_2" />5 Star
+            </label>
+          </div>
+        </form>
+ 
+        <form action="index.html" class="select_why_Are_you_here">
+          <h2>Why are you here?</h2>
+          <label>
+            <select name="Reason" id="reason_selector">
+              <option value="Business">Business</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Love_for_art">Love for art</option>
+            </select>
+          </label>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
