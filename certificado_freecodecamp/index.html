@@ -17,36 +17,38 @@ Fulfill the user stories and pass all the tests below to complete this project. 
   </head>
   <body>
     <div class="container">
-       <header class="header">
+      <header class="header">
         <h1 id="title">Free Code Camp - Carlos Morales Activity</h1>
         <p id="description">
           This is a task provided by FreeCodeCamp in order to achive all their
           requirements for their <strong> Web Design Certification</strong>.
         </p>
       </header>
- 
+
       <main>
-       <form action="index.html" class="first_form">
-          <label>
-            <h2>Name</h2>
-            <input
+        <form action="send">
+
+          <div class="first_form">
+            <label>
+              <h2>Name</h2>
+              <input
               id="name-label"
               type="text"
               name="name"
               id="name"
               required
               placeholder="Enter your name" />
-          </label>
-          <label>
-            <h2>Email</h2>
+            </label>
+            <label>
+              <h2>Email</h2>
             <input
-              id="email-label"
+            id="email-label"
               type="email"
               name="email"
               id="email"
               required
               placeholder="Enter your e-mail" />
-          </label>
+            </label>
           <label>
             <h2>Age</h2>
             <input
@@ -59,60 +61,103 @@ Fulfill the user stories and pass all the tests below to complete this project. 
               required
               placeholder="Enter your age" />
           </label>
-        </form>
+        </div>
 
-        <form action="index.html" class="second_form">
+        <div class="second_form">
           <h2>How many stars would you give to this website?</h2>
           <div class="labels_2">
             <label>
+              
               <input
-                type="radio"
-                name="stars"
-                value="1_Start"
-                class="input_2" />1 Star
+              type="radio"
+              name="stars"
+              value="1_Stars"
+              class="input_2" />1 Star
             </label>
             <label>
               <input
-                type="radio"
-                name="stars"
-                value="2_Start"
-                class="input_2" />2 Star
+              type="radio"
+              name="stars"
+              value="2_Stars"
+              class="input_2" />2 Stars
             </label>
             <label>
               <input
-                type="radio"
-                name="stars"
-                value="3_Start"
-                class="input_2" />3 Star
+              type="radio"
+              name="stars"
+              value="3_Stars"
+              class="input_2" />3 Stars
             </label>
             <label>
               <input
-                type="radio"
-                name="stars"
-                value="4_Start"
-                class="input_2" />4 Star
+              type="radio"
+              name="stars"
+              value="4_Stars"
+              class="input_2" />4 Stars
             </label>
             <label>
               <input
-                type="radio"
-                name="stars"
-                value="5_Start"
-                class="input_2" />5 Star
+              type="radio"
+              name="stars"
+              value="5_Stars"
+              class="input_2" />5 Stars
             </label>
           </div>
-        </form>
- 
-        <form action="index.html" class="select_why_Are_you_here">
+        </div>
+
+        <div class="select_why_Are_you_here">
           <h2>Why are you here?</h2>
-          <label>
+          <label class="select_container">
             <select name="Reason" id="reason_selector">
               <option value="Business">Business</option>
               <option value="Entertainment">Entertainment</option>
               <option value="Love_for_art">Love for art</option>
             </select>
           </label>
-        </form>
+        </div>
+        
+        <div class="survey">
+          <h1 class="tittle">How are you feeling after asking this survey</h1>
+          <div class="survey_labels">
+            <label>
+              <input type="checkbox" id="happy_checkbox" value="Happy" />
+              Happier
+            </label>
+            <label>
+              <input type="checkbox" id="angry_checkout" value="Angry" />Angrier
+            </label>
+            <label>
+              <input
+              type="checkbox"
+              id="motivated_checkbox"
+              value="Motivated" />
+              Motivated
+            </label>
+            <label>
+              <input type="checkbox" id="sad_checkbox" value="Sad"/>Sadder
+            </label>
+            <label>
+              <input
+              type="checkbox"
+              id="exhausted_checkbox"
+              value="Exhausted" />Exhausted
+            </label>
+          </div>
+        </div>
+        <div class="opinion_textarea_div">
+          
+          <form action="index.html">
+
+            <h2>Give us your own answer</h2>
+
+            <textarea name="opinion_textarea" id="opinion_textarea" cols="5" rows="5"></textarea>
+          </form>
+        </div>
+        <div class="button">
+          <button>Send</button>
+        </div>
+      </form>
       </main>
     </div>
   </body>
-</html>
+  </html>
