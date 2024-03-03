@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #dbd8d8;
+}
+
+#code-space_who_am_I{
+    color: #b6b6b6;
+    
+}
+
+#code-space_who_am_I{
+    background-color: #504c4c;
+}
+
+#who_am_I_container p{
+}
+
+#who_am_I_title{
+    font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  left: -0.3rem;
+}
+
+#which_languages_I_know #Laguages-title-box{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    color: #773a00;
+}
+
+#language-box{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2,1fr);
+}
