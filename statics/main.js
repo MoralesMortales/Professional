@@ -1,1 +1,3 @@
-ScrollReveal().reveal('.section', {delay:50000});
+ScrollReveal().reveal('.section', {
+    duration: 1000, // Animation duration in milliseconds
+});
