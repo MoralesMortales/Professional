@@ -4,99 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Carlos's Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Besley:ital,wght@0,400..900;1,400..900&family=Josefin+Sans&family=Lobster&family=Nova+Slim&family=Oleo+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="statics/styles.css">
+    <title>New World, My World</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
-<body>
-    <section class="header_box">
-
-        <header class="header">
-            <h1 class="title">Carlos Morales</h1>
-        </header>
-    </section>
-
-    <section class="navegator">
-
-        <nav class="links">
-
-            <ul>
-                <li><a href="#">Menu</a>
-                    <ul>
-                        <li><a href="#">Social media</a></li>
-                        <li><a href="#">My history</a></li>
-                        <li><a href="#">Proyects</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Languages</a></li>
-                <li><a href="#">Academic history</a></li>
+<body class="mana">
+    <div id="containermainmain" class="section">
+        <div class="" id="header-contaner">
+            <header class="h-72 bg-orange-600 flex flex-row justify-around">
+                <h1 class="font-serif text-4xl self-center">Carlos Morales</h1>
+                <img class="h-3/5 self-center rounded-2xl"
+                    src="https://i.pinimg.com/236x/82/a2/81/82a281d4e054f47f0853ad35c76af1bb.jpg" alt="dddd">
+            </header>
+        </div>
+        <nav id="nav-bar" class="">
+            <ul class="flex justify-around h-16 bg-slate-500 items-center">
+                <li class=""><a href=""
+                        class="bg-slate-200 px-10 py-2 rounded-r-3xl duration-300 hover:bg-yellow-500">Github</a></li>
+                <li class=""><a href=""
+                        class="bg-slate-200 px-10 py-2 rounded-r-3xl duration-300 hover:bg-yellow-500">Projects</a></li>
+                <li class=""><a href=""
+                        class="bg-slate-200 px-10 py-2 rounded-r-3xl duration-300 hover:bg-yellow-500">Contact
+                        me</a></li>
             </ul>
-
         </nav>
 
-    </section>
+        <main id="main">
 
-    <div class="main_sidebar">
-        <section class="sidebar">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem corrupti voluptate tempore,
-                illo, omnis culpa sed voluptas voluptatem delectus debitis tenetur, porro quod fugit nam ab doloribus
-                harum suscipit? Cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis incidunt,
-                reprehenderit dolore aspernatur dolor provident voluptatibus. Iure dicta sed modi accusantium facilis
-                tempore quos, molestias, dolor, esse praesentium harum neque.<br><br></p>
-        </section>
-
-        <main class="main">
-            <section class="main_container">
-
-                <h3 class="title">This is the main content</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos hic vitae amet ipsum est obcaecati
-                    ducimus impedit fuga perferendis. Impedit rem suscipit animi possimus libero quos similique
-                    obcaecati facilis.
-                    Molestias similique nulla provident, sequi, id, deserunt unde inventore dolorum corrupti a odit
-                    facere ullam cum eaque possimus doloremque! Voluptas n<br><br>emo dolorum ut numquam aperiam
-                    assumenda, ea quam molestiae placeat!
-                    Amet ea, beatae unde earum doloremque fugiat aperiam error iure ad dolores pariatur vero non itaque
-                    perferendis suscipit ipsa, quisquam ab id. Sapiente repellat eligendi esse eveniet tempora! Quam,
-                    similique?
-                    Doloremque voluptatibus, quas voluptate quasi nesciunt laborum labore. Provident esse deleniti,
-                    quaerat cupiditate ab dignissimos temporibus veritatis corrupti ipsa sit ea porro natus quisquam
-                    commodi dolorum autem blanditiis officiis repellat.
-                    Repellat animi eius earum, error incidunt voluptati <br><br> bus similique dolore dolor molestias
-                    quod rem ratione, quia, libero dolorem illum. Nisi facilis quisquam necessitati<br><br>us
-                    consequuntur voluptatum vero sapiente consectetur voluptates consequatur repellat?
-                    Officiis, debitis enim, consequuntur rerum labore facilis sint nobis autem earum, quos delectus.
-                    Nulla doloremque error, veniam laborum iste deserunt qu<br><br>os deleniti nesciunt rerum optio
-                    ullam a assumenda aliquam itaque.
-                    Non ut inventore, perferendis, animi excepturi accusantium distinctio nemo molestias atque voluptate
-                    ea, exercitationem voluptates tempore aspernatur asperiores maiores placeat dolore quas? Eligendi
-                   
-                    <article class="imgage_Section_1">
-                    <h4 class="image_title">Title 1</h4>
-                    <img src="recurses/usuario.png" alt="Delta Amacuro" class="img_one">
-                   </article>
-
-                    vero iure sit unde natus, tenetur earum?
-                    Ex praesentium tempore culpa error? Sit, consequatur nesciunt. Voluptatibus nihil atque error
-                    laborum doloribus. Libero esse quae vel nesciunt aliquam. Nobis facilis fugiat quasi itaque alias
-                    iusto temporibus perspiciatis nostrum.</p>
+            <section id="who_am_I" class="section">
+                <article class="w-3/4 mx-auto mt-5 p-5 rounded-lg shadow-2xl flex flex-col gap-7"
+                    id="who_am_I_container">
+                    <h2 id="who_am_I_title" class="font-semibold text-4xl">Who am I?</h2>
+                    <div class="flex flex-col gap-4  p-5 rounded-lg shadow-md" id="code-space_who_am_I">
+                        <p>I'm a passionate programmer who enjoys my learning sessions and strives to improve every day.
+                            My
+                            name is Carlos Morales, and I'm currently studying Systems Engineering in Barcelona,
+                            Venezuela.
+                            <br><br>My goal is to become a Full Stack developer and App developer, while also <br>
+                            contributing to the growth and performance of those around me, helping them become a little
+                            better each day.
+                        </p>
+                    </div>
+                </article>
             </section>
+
+            <section id="which_languages_I_know" class="flex flex-col w-5/5 items-center section">
+                <div id="Presenting_lgs" class="w-3/4 mx-auto mt-5 p-5 rounded-lg  flex flex-col gap-7">
+
+                    <h2 id="Laguages-title-box" class="font-semibold text-4xl">Languages </h2>
+
+                    <p id="My_current_languages" class="w-5/5 shadow-md bg-white p-2 rounded-lg self-center">
+                        I have always been fascinated by languages and countries around the world. My dream of someday
+                        traveling to these cultures and meeting new people is one of my main motivations for studying
+                        languages.</p>
+
+                    <h5 class="self-center">Currently I know these languages</h5>
+
+                </div>
+                <div id="art" class="flex ">
+
+                    <article class="language w-full inline-block">
+
+                        <div class="" id="language-mini-containers">
+                            <div id="headerlanguages" class="flex flex-row justify-between   px-1 w-full">
+                                <h3 class="title w-3/4">English</h3>
+                                <img src="statics/Imgs/english-flag-removebg-preview.png" alt="Language Image"
+                                    id="English-Image" class="flag w-1/4">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+
+                        </div>
+                    </article>
+                    <article class="language w-full inline-block">
+                        <div id="language-box" class="language flex flex-col"></div>
+                        <div class="" id="language-mini-containers">
+                            <div id="headerlanguages" class="flex flex-row justify-between   px-1 w-full">
+                                <h3 class=" w-3/4 title">Spanish</h3>
+                                <img class="w-1/4"
+                                    src="statics/Imgs/Spanish_Flag_Pin_Badge__Spanish__Spain__Spain_Day_PNG_Transparent_Clipart_Image_and_PSD_File_for_Free_Download-removebg-preview-removebg-preview.png"
+                                    alt="Language Image" id="spanish">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, animi.</p>
+
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="Programming-languages">
+                <header class="w-3/4 flex-col justify-center mx-auto ">
+                    <div class="flex flex-row h-14 bg-red-400 justify-around" id="header-programming">
+                        <h2 class="title_PL">Programming Languages</h2>
+                        <img src="statics/Imgs/codigo.png" alt="Code Image">
+                    </div>
+                </header>
+                <article id="Programming-languages-boxes">
+                    <div class="box">
+                       <div class="header-box-programming">
+                         <img src="statics/Imgs/0e7d4ad55cdc3db527af6c3d72f41ad0-removebg-preview.png" alt="Icon">
+                         <h2 class="title">C++</h2>
+                       </div>
+                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ratione officia commodi dolorem eos fugit. Sequi laboriosam minus quam eligendi nulla at eius a veniam aliquid, incidunt aut? Ad, provident!</p>
+
+                    </div>
+                    <div class="box">
+                        <div class="header-box-programming">
+                            <img src="statics/Imgs/b7c2e508920a1168b94dea8675fa311d-removebg-preview.png" alt="Icon">
+                            <h2 class="title">Python</h2>    
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ratione officia commodi dolorem eos fugit. Sequi laboriosam minus quam eligendi nulla at eius a veniam aliquid, incidunt aut? Ad, provident!</p>
+                    </div>
+                    <div class="box">
+                        <div class="header-box-programming">
+                            <img src="statics/Imgs/ed666327dd3ce274d94f2b3547155891-removebg-preview.png" alt="Icon">
+                            <h2 class="title">HTML</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ratione officia commodi dolorem eos fugit. Sequi laboriosam minus quam eligendi nulla at eius a veniam aliquid, incidunt aut? Ad, provident!</p>
+                    </div>
+                    <div class="box">
+                        <div class="header-box-programming">
+                            <img src="statics/Imgs/811421bf95c2d6506d3660a6814b71d2-removebg-preview.png" alt="Icon">
+                            <h2 class="title">HTML</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ratione officia commodi dolorem eos fugit. Sequi laboriosam minus quam eligendi nulla at eius a veniam aliquid, incidunt aut? Ad, provident!</p>
+                    </div>
+                </article>
+            </section>
+
         </main>
 
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="statics/main.js"></script>
     </div>
-
-    <section class="footer">
-        <footer>
-            <h4 class="foote_title">Footer</h4>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro dolore, numquam cum minima facilis molestiae autem assumenda consequuntur labore beatae veniam optio tempore velit in sit ullam, suscipit voluptas.
-            Expedita consectetur eos ratione, harum corporis itaque id possimus modi deleniti neque rerum, molestias vero asperiores cum, ipsam molestiae. Doloribus incidunt, ipsam ducimus delectus ex nemo expedita maiores voluptates porro.
-            Maxime ratione porro sint, in magnam iusto dolorem vitae beatae labore voluptatibus voluptate molestias nemo voluptates optio culpa suscipit, quos fuga saepe dolorum consequuntur? Quod ex quas dolore dicta magni.
-            Eaque hic cumque labore adipisci aliquid vitae enim accusamus in maiores aut dolorem nisi ea, temporibus nihil porro quis nesciunt expedita, sapiente amet ipsa? Laborum necessitatibus natus libero molestias enim?</p>
-        
-        </footer>
-    </section>
-
 </body>
 
 </html>
