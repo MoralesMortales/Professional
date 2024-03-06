@@ -88,6 +88,52 @@ main{
     margin-bottom: 9rem;
 }
 
-#language-box{
-    
+.title_PL{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    color: #55cbe9;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
+
+#Programming-languages{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header-programming{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+
+#header-programming img{
+    height: 100%;
+    padding: 0.2rem;
+    padding-top: .7rem;
+}
+
+#Programming-languages-boxes{
+    display: flex;
+    flex-direction: row;
+    background-color: #504c4c;
+    gap: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#Programming-languages-boxes .box{
+width: 23.7%;
+border: 2px solid #313131;
+background-color: #55cbe9;
+}
+
+#header-box-programming 
