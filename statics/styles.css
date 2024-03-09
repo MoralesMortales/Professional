@@ -124,16 +124,114 @@ main{
     display: flex;
     flex-direction: row;
     background-color: #504c4c;
-    gap: 2rem;
     margin-top: 3rem;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 #Programming-languages-boxes .box{
-width: 23.7%;
-border: 2px solid #313131;
-background-color: #55cbe9;
+    max-width: 318.47px;
+    border: 2px solid #313131;
+    background-color: #e5f0f3;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+    min-width: 235.67px;
 }
 
-#header-box-programming 
+#Programming-languages-boxes .box img{
+width: 50%;
+}
+
+.header-box-programming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.85rem;
+    gap: 1rem;
+}
+
+.box p{
+padding: .8rem;
+text-align: justify;
+}
+
+
+#tools_I_use{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 82%;
+    margin: 0 auto;
+
+}
+
+#tools_I_use_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#tools_I_use_header{
+padding: 3rem 0;
+}
+
+#tools_I_use_header h1{
+
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #b58863;
+}
+
+#tools_I_use #content_tools .box_tool{
+    border: 2px solid #313131;
+    background-color: #e5f0f3;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+    min-width: 100px;
+    max-width: 150px;
+}
+
+#tools_I_use #content_tools .box_tool img{ width: 80%; margin: 0 auto; padding: 0.8rem; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px;
+}
+
+#microsoft-img{
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#microsoft-img img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+
+#content_tools{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:713px){
+ 
+    body{
+        color: #55cbe9;
+
+    }
+}
