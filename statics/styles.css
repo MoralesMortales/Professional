@@ -69,20 +69,7 @@ main{
     background-color: aquamarine;
 }
  */
-#language-mini-containers{
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,1fr);
-    padding: 3rem;
-    border: 4px black solid;
-    border-radius: 9px;
-    background-color: #ffffff;
-    grid-template-areas: "title flag" "Info Info";
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    -o-border-radius: 9px;
-}
+
 
 #headerlanguages{
     padding: 7px 1rem;
@@ -97,21 +84,6 @@ main{
     color: #e6e6e6;
 }
 
-#art{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.language{ 
-    width: 50%;
-}
-
-#art{
-    width: 70%;
-    gap: 3rem;
-    margin-bottom: 9rem;
-}
 
 .title_PL{
     font-family: "Anton", sans-serif;
@@ -156,7 +128,7 @@ main{
     gap: 2rem;
     padding: 2rem;
 }
-
+    
 #Programming-languages-boxes .box{
     border: 2px solid #313131;
     background-color: #e5f0f3;
@@ -248,13 +220,37 @@ padding: 3rem 0;
 
 }
 
-#art{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 #which_languages_I_know .language{
-    width: 30%;
+    min-width: 20px;
+}
+
+#art{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+
+}
+
+#language-mini-containers{
+    width: 100px;
+    height: 26vw;
+    min-height: 280px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    padding: 3rem;
+    border: 4px black solid;
+    border-radius: 9px;
+    background-color: #ffffff;
+    grid-template-areas: "title flag" "Info Info";
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    min-width: 300px;
 }
 
 .link-head:hover{
