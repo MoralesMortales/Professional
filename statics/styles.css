@@ -97,6 +97,11 @@ main{
     color: #e6e6e6;
 }
 
+#art{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 .language{ 
     width: 50%;
@@ -241,6 +246,15 @@ padding: 3rem 0;
     max-width: 15rem;
     display: flex;
 
+}
+
+#art{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#which_languages_I_know .language{
+    width: 30%;
 }
 
 .link-head:hover{
