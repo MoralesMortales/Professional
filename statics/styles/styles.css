@@ -1,3 +1,7 @@
+:root{
+    --grecolor:rgb(93, 95, 97);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,25 +14,11 @@ body{
 }
 
 main{
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 10%, #000000); /* Define el degradado, en este caso de transparente a negro */
-    
+  
 }
 
 #nav-bar{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-
-#nav-bar-header{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(93, 95, 97);
-    align-items: center;
-    height: 4.6rem;
-    padding: 0 1rem;
-  
+    background-color: var(--grecolor);
 }
 
 .link-head {
@@ -46,6 +36,7 @@ main{
     align-items: center;
     justify-content: center;
     text-wrap: nowrap;
+    padding: 2em 4em 2em 4em;
 
 }
 
@@ -73,7 +64,6 @@ main{
 
 .link-increase{
     width: 100%;
-  
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,30 +89,45 @@ main{
   position: relative;
   left: -0.3rem;
 }
-
-#which_languages_I_know #Laguages-title-box{
+/*
+ #which_languages_I_know #Laguages-title-box{
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
     position: relative;
     color: #773a00;
 }
+*/
+#city-london-bg{
+    background-image: url('../Imgs/london.png');
+    background-size: cover;
+}
 
+#city-vzla-bg{
+background-image: url('../Imgs/How\ To\ Visit\ Beautiful\ Angel\ Falls\,\ Venezuela.jpeg');
+background-size: cover;
+
+}
+
+#city-deutschland-bg{
+    background-image: url('../Imgs/Deutschland.jpeg');
+    background-size: cover; 
+
+}
 
 #headerlanguages{
     padding: 7px 1rem;
     align-items: center;
     background-color: #363434;
-    border-radius: 3px 5px 3px 5px;
-    -webkit-border-radius: 3px 5px 3px 5px;
-    -moz-border-radius: 3px 5px 3px 5px;
-    -ms-border-radius: 3px 5px 3px 5px;
-    -o-border-radius: 3px 5px 3px 5px;
+    border-radius: 3px 5px 5px 5px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    -ms-border-radius: 3px 5px 5px 5px;
+    -o-border-radius: 3px 5px 5px 5px;
     margin-bottom: 2rem;
     color: #e6e6e6;
-}
-
-
+} 
+ 
 .title_PL{
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -132,7 +137,6 @@ main{
     font-size: 2.5rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    
 }
 
 #Programming-languages{
@@ -181,9 +185,9 @@ main{
     min-width: 290px;
 }
 
-#Programming-languages-boxes .box img{
+/* #Programming-languages-boxes .box img{
     width: 50%;
-}
+} */
 
 .header-box-programming {
     display: flex;
@@ -320,14 +324,13 @@ margin-bottom: 4rem;
 
 }
 
-#language-mini-containers{
+.language-mini-containers{
     width: 100px;
     height: 26vw;
     min-height: 280px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     grid-template-rows: repeat(2,1fr);
-    padding: 3rem;
-    border: 4px black solid;
+    border: 1px silver solid;
     border-radius: 9px;
     background-color: #ffffff;
     grid-template-areas: "title flag" "Info Info";
@@ -336,7 +339,7 @@ margin-bottom: 4rem;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
     min-width: 300px;
-}
+} 
 
 
 #tools_I_use #content_tools .box_tool img{ 
@@ -386,16 +389,12 @@ width: 110%;
 #microsoft-img img{
 }
 
-/* 
+
 #TheFooter{
-    background-color: rgb(139, 139, 139);
-    padding: .5rem 2rem;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    background-color: #b4bbbb;
 }
+
+/* 
 #TheFooter .left-side{
     display: flex;
     flex-direction: column;
