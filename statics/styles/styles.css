@@ -17,38 +17,33 @@ main{
   
 }
 
-#nav-bar{
-    background-color: var(--grecolor);
+#nav-bar-header{
+    background-color: rgba(255, 255, 255, 0.623);
+    height: 90vh;
+
 }
 
 .link-head {
-    background-color: #dddbdb;
-    padding: .7rem 2rem;
-    border-radius: .8rem;
-    min-width: 1rem;
-    width: 20vw;
+    width: 100%;
+    background-color: #b4bbbb;
+    padding: 10px 0;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-wrap: nowrap;
-    padding: 2em 4em 2em 4em;
-
 }
 
 .link-head:hover {
+    text-align: center;
     text-wrap: nowrap;
+    width: 100%;
     border: #313131 2px solid;
     background-color: #f0a94c;
     font-size: 1.12rem;
     align-items: center;
     transform: scaleX(1.12);
     transform: scaleY(1.0);
-    text-align: right;
     transform-origin: left center;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
@@ -63,10 +58,6 @@ main{
 
 
 .link-increase{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #who_am_I{
