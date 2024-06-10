@@ -10,12 +10,8 @@
 
 body{
     background-color: #dbd8d8;
-    
 }
 
-main{
-  
-}
 
 #nav-bar-header{
     background-color: rgba(255, 255, 255, 0.623);
@@ -154,6 +150,57 @@ background-size: cover;
     margin-top: 1.7rem;
 }
 
+@keyframes slide{
+
+    0%{
+        margin-left: 0;
+    }
+
+    11%{
+margin-left: -100%;
+    }
+
+    22%{
+        margin-left: -200%;
+
+    }
+
+    33%{
+        margin-left: -300%;
+
+    }
+
+    44%{
+        margin-left: -400%;
+
+    }
+
+    55%{
+        margin-left: -500%;
+
+    }
+
+    66%{
+        margin-left: -600%;
+
+    }
+
+    77%{
+        margin-left: -700%;
+
+    }
+
+    88%{
+        margin-left: -800%;
+
+    }
+
+    99%{
+        margin-left: 0; 
+    }
+
+}
+
 #header-programming img{
     height: 100%;
     padding: 0.2rem;
@@ -169,8 +216,21 @@ background-size: cover;
     justify-content: space-around;
     gap: 2rem;
     padding: 2rem;
+ 
 }
+
+#Programming-languages{
+    overflow: hidden; 
+}
+
     
+#Programming-languages-boxes {
+display: flex;
+width: 100%; 
+flex-wrap: nowrap; 
+margin: 0 -100%;
+}
+
 #Programming-languages-boxes .box{
     border: 2px solid #313131;
     background-color: #e5f0f3;
@@ -178,24 +238,26 @@ background-size: cover;
     -webkit-border-radius: 19px;
     -moz-border-radius: 19px;
     -ms-border-radius: 19px;
-    -o-border-radius: 19px;
-    width: 100%;  
+    -o-border-radius: 19px; 
     display: flex;
     padding: 0 30px; 
+    justify-content: center;
+    align-items: center;
 
+}
+
+#Programming-languages-boxes .box{
+min-width: 100%;
+overflow: hidden;
 }
 
 .box p{
-    width: 60%;
+    margin: 0 auto;
+
 }
 
-/* #Programming-languages-boxes .box img{
-    width: 50%;
-} */
-
 .header-box-programming img {
- 
-    width: 90%; 
+    min-width: 100%; 
 }
 .header-box-programming {
     display: flex;
@@ -204,8 +266,8 @@ background-size: cover;
     align-items: center;
     padding: 1.85rem;
     gap: 1rem;
-    height: 30vw;
-    width: 40%; height: 100%; 
+    width: 90%; 
+    height: 100%; 
 }
 
 .box p{
