@@ -75,15 +75,7 @@ body{
   position: relative;
   left: -0.3rem;
 }
-/*
- #which_languages_I_know #Laguages-title-box{
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    position: relative;
-    color: #773a00;
-}
-*/
+
 #city-london-bg{
     background-image: url('../Imgs/london.png');
     background-size: cover;
@@ -135,10 +127,11 @@ background-size: cover;
 
 #Programming-languages{
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden; 
 }
 
 #header-programming{
@@ -150,90 +143,21 @@ background-size: cover;
     margin-top: 1.7rem;
 }
 
-@keyframes slide{
-
-    0%{
-        margin-left: 0;
-    }
-
-    11%{
-margin-left: -100%;
-    }
-
-    22%{
-        margin-left: -200%;
-
-    }
-
-    33%{
-        margin-left: -300%;
-
-    }
-
-    44%{
-        margin-left: -400%;
-
-    }
-
-    55%{
-        margin-left: -500%;
-
-    }
-
-    66%{
-        margin-left: -600%;
-
-    }
-
-    77%{
-        margin-left: -700%;
-
-    }
-
-    88%{
-        margin-left: -800%;
-
-    }
-
-    99%{
-        margin-left: 0; 
-    }
-
-}
-
-#header-programming img{
-    height: 100%;
-    padding: 0.2rem;
-    padding-top: .7rem;
-}
-
 #Programming-languages-boxes{
     display: flex;
     flex-direction: row;
     margin-top: 1.8rem;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 2rem;
- 
-}
+    width: 100%;  
+    flex-wrap: nowrap;
+    padding: 2rem;   
+    margin: 0 auto ;
+    transition: transform 0.5s ease-in-out; 
 
-#Programming-languages{
-    overflow: hidden; 
-}
-
-    
-#Programming-languages-boxes {
-display: flex;
-width: 100%; 
-flex-wrap: nowrap; 
-margin: 0 -100%;
 }
 
 #Programming-languages-boxes .box{
     border: 2px solid #313131;
-    background-color: #e5f0f3;
+    background:linear-gradient( #fff , #ffefef , #dde9ec ); 
     border-radius: 19px;
     -webkit-border-radius: 19px;
     -moz-border-radius: 19px;
@@ -243,17 +167,13 @@ margin: 0 -100%;
     padding: 0 30px; 
     justify-content: center;
     align-items: center;
+    min-width: 100%; 
+    margin: 0 2em;
 
 }
 
-#Programming-languages-boxes .box{
-min-width: 100%;
-overflow: hidden;
-}
-
-.box p{
-    margin: 0 auto;
-
+#Programming-languages-boxes .box:first-child{
+margin-left: 0;
 }
 
 .header-box-programming img {
@@ -305,9 +225,7 @@ padding: 3rem 0;
     font-size: 2rem;
     color: #b58863;
 }
-
 #tools_I_use #content_tools {
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,10 +242,22 @@ padding: 3rem 0;
     -o-border-radius: 1rem;
     padding: 2rem 3rem;
     margin-bottom: 4rem;
+    overflow: hidden; /* Asegúrate de ocultar el desbordamiento */
 }
 
-/* Remenber de rows and columns */
-#tools_I_use #content_tools .box_tool{
+#content_slide_s {
+    display: flex;
+    background-color: blue;
+    gap: 2em;
+    justify-content: flex-start;
+    animation: moving 18s infinite;
+    -webkit-animation: moving 18s infinite ease-in-out;
+    -moz-animation: moving 18s infinite ease-in-out;
+    -ms-animation: moving 18s infinite ease-in-out;
+    -o-animation: moving 18s infinite ease-in-out;
+}
+
+#tools_I_use #content_tools .box_tool, .box_tool-micro {
     border: 2px solid #313131;
     background-color: #e5f0f3;
     border-radius: 16px;
@@ -343,13 +273,12 @@ padding: 3rem 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    display: flex;
     padding: 1rem;
-    transition:  ease .6s ;
-    -webkit-transition:  ease .6s ;
-    -moz-transition:  ease .6s ;
-    -ms-transition:  ease .6s ;
-    -o-transition:  ease .6s ;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
+    -moz-transition: ease .6s;
+    -ms-transition: ease .6s;
+    -o-transition: ease .6s;
 }
 
 
