@@ -1,0 +1,91 @@
+
+#tools_I_use{
+    margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#tools_I_use_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerToOverflow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#tools_I_use_header{
+padding: 3rem 0;
+}
+
+#tools_I_use_header h1{
+
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #b58863;
+}
+
+#tools_I_use #content_tools {
+    margin-bottom: 4rem;
+    padding: 2em 6em; 
+}
+
+#content_slide_s {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: moving 18s infinite;
+    -webkit-animation: moving 18s infinite;
+    -moz-animation: moving 18s infinite ease-in-out;
+    -ms-animation: moving 18s infinite ease-in-out;
+    -o-animation: moving 18s infinite alternate;
+}
+
+@keyframes moving {
+    0%{}
+    10%{margin-left: -100%;}
+    20%{margin-left: -200%;}
+    30%{margin-left: -300%;}
+    40%{margin-left: -400%;}
+    50%{margin-left: -500%;}
+    60%{margin-left: -600%;}
+    70%{margin-left: -700%;}
+    80%{margin-left: -800%;}
+    90%{margin-left: -900%;}
+    100%{margin-left: 0;}
+}
+
+#tools_I_use #content_tools .box_tool {
+    border: 2px solid #313131;
+    background-color: #e5f0f3;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    min-width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+
+#tools_I_use #content_tools .box_tool img{ 
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 0; 
+    }
+    
+    
+    #tools_I_use #content_tools .box_tool .text{
+        text-align: center;
+    }
+    
