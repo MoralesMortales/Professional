@@ -47,16 +47,14 @@ padding: 3rem 0;
 }
 
 @keyframes moving {
-    0%{}
-    10%{margin-left: -100%;}
-    20%{margin-left: -200%;}
-    30%{margin-left: -300%;}
-    40%{margin-left: -400%;}
-    50%{margin-left: -500%;}
-    60%{margin-left: -600%;}
-    70%{margin-left: -700%;}
-    80%{margin-left: -800%;}
-    90%{margin-left: -900%;}
+    0%{margin-left: 0;}
+    14.28%{margin-left: -100%;}
+    28.56%{margin-left: -200%;}
+    42.84%{margin-left: -300%;}
+    57.12%{margin-left: -400%;}
+    71.40%{margin-left: -500%;}
+    85.68%{margin-left: -600%;}
+    99.92%{margin-left: 0%;}
     100%{margin-left: 0;}
 }
 
