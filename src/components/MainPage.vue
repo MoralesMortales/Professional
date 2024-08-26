@@ -5,6 +5,7 @@
 </template>
 
 <script setup lang="ts">
+
 import Header from './onMain/Header.vue'
 import PersonalInfo from './onMain/PersonalInfo.vue'
 

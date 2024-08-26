@@ -1,6 +1,21 @@
 import { defineStore } from 'pinia';
+import spanishLogo from '../assets/Img/Spanish_Flag_Pin_Badge__Spanish__Spain__Spain_Day_PNG_Transparent_Clipart_Image_and_PSD_File_for_Free_Download-removebg-preview-removebg-preview.png';
+import englishLogo from '../assets/Img/flag_english.png';
+import germanLogo from '../assets/Img/Germany_Flag_Vector_Design_Images__Round_Country_Flag_Germany__Round__Country__Flag_Germany_PNG_Image_For_Free_Download-removebg-preview.png';
 
-export const useProfileDataStore = defineStore('ProfileData', {
+import spanishImg from '../assets/Img/spanish_image.jpeg'
+import englishImg from '../assets/Img/English_Image.png'
+import germanImg from '../assets/Img/german_image.jpeg'
+
+import cpp_logo from '../assets/Img/cpp_logo.png'
+import python_logo from '../assets/Img/python_logo.png'
+import js_logo from '../assets/Img/js.png'
+import ts_logo from '../assets/Img/ts.png'
+import html_logo from '../assets/Img/html_logo.png'
+import css_logo from '../assets/Img/css_logo.png'
+import php_logo from '../assets/Img/php.png'
+
+export const useProfileDataStore = defineStore('useProfileDataStore', {
   state: () => ({
     person: [
       {
@@ -15,17 +30,19 @@ export const useProfileDataStore = defineStore('ProfileData', {
         ],
 
         languages: [
-          { name: 'Spanish', level: 'C2 (Native)', img:'@/assets/Imgs/spanish_image.jpeg' },
-          { name: 'English', level: 'C1', img:'@/assets/Imgs/English_image.png' },
-          { name: 'German', level: 'A2', img:'@/assets/Imgs/german_image.jpeg' },
+          { name: 'Spanish', level: 'C2 (Native)', logo: spanishLogo ,img: spanishImg },
+          { name: 'English', level: 'C1',  logo: englishLogo ,img: englishImg},
+          { name: 'German', level: 'A2', logo: germanLogo ,img: germanImg },
         ],
 
         programming_languages: [
-          { name: 'C++', level: 'Intermediate' },
-          { name: 'Python', level: 'Intermediate' },
-          { name: 'JavaScript - TypeScript', level: 'Intermediate' },
-          { name: 'HTML5 / CSS3', level: 'Advanced' },
-          { name: 'PHP', level: 'Junior' },
+          { name: 'C++', level: 'Intermediate', logo: cpp_logo},
+          { name: 'Python', level: 'Intermediate', logo: python_logo},
+          { name: 'JavaScript', level: 'Intermediate', logo: js_logo },
+          { name: 'TypeScript', level: 'Intermediate', logo: ts_logo },
+          { name: 'HTML5', level: 'Advanced', logo: html_logo },
+          { name: 'CSS3', level: 'Intermediate', logo: css_logo },
+          { name: 'PHP', level: 'Junior', logo: php_logo },
         ],
 
         frameworks: [
@@ -51,6 +68,16 @@ export const useProfileDataStore = defineStore('ProfileData', {
   }),
   getters: {
 
+    getLanguages(state){
+      const languages = state.person.flatMap(lang => lang.languages)
+      console.log(languages)
+      return languages
+    },
+    getProgrammingLanguages(state){
+      const ProLanguages = state.person.flatMap(lang => lang.programming_languages)
+      console.log(ProLanguages)
+      return ProLanguages
+    }
   },
   actions: {
 
