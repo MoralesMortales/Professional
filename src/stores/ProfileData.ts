@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
-import spanishLogo from '../assets/Img/Spanish_Flag_Pin_Badge__Spanish__Spain__Spain_Day_PNG_Transparent_Clipart_Image_and_PSD_File_for_Free_Download-removebg-preview-removebg-preview.png';
+import spanishLogo from '../assets/Img/spanish_flag.png';
 import englishLogo from '../assets/Img/flag_english.png';
-import germanLogo from '../assets/Img/Germany_Flag_Vector_Design_Images__Round_Country_Flag_Germany__Round__Country__Flag_Germany_PNG_Image_For_Free_Download-removebg-preview.png';
+import germanLogo from '../assets/Img/germany_flag.png';
 
 import spanishImg from '../assets/Img/spanish_image.jpeg'
 import englishImg from '../assets/Img/English_Image.png'
