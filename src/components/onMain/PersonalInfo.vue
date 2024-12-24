@@ -6,7 +6,7 @@
 
 <script setup>
 
-import whoAmIVue from "./PersonalInfo/whoAmI.vue";
+import whoAmIVue from "@/components/onMain/PersonalInfo/WhoAmI.vue";
 import languages from "./PersonalInfo/languages.vue"
 import ProLanguages from "./PersonalInfo/ProLanguages.vue";
 

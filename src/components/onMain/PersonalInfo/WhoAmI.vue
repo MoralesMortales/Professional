@@ -24,7 +24,6 @@
 </script>
 
 <style scope>
-
 #code-space_who_am_I{
   background-color: #29384B;
 }
