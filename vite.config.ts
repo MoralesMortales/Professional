@@ -1,12 +1,20 @@
+
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin';
 
 export default defineConfig({
-  plugins: [vue()],
-  base:'https://moralesmortales.github.io/professional',
+  plugins: [
+    vue({
+      template: { transformAssetUrls },
+    }),
+    quasar(),
+  ],
+  base: 'https://moralesmortales.github.io/professional',
   resolve: {
     alias: {
-      '@': '/src',  
+      '@': '/src',
     },
   },
 });
+

@@ -54,7 +54,7 @@
 <style scope>
 
 #left_side_header{
-  background: #E4DCD9;
+  background: #fff;
   width: 55%;
 }
 
