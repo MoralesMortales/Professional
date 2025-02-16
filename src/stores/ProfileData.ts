@@ -94,6 +94,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "C++ is a powerful, high-performance programming language used for system/software development, game development, and real-time applications.",
             category: "Programming Language",
             time: "2 Years",
+            used: [""],
           },
           {
             name: "Python",
@@ -101,6 +102,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Python is a versatile, high-level programming language known for its simplicity and readability, widely used in web development, AI, and data science.",
             category: "Programming Language",
             time: "3 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "JavaScript",
@@ -108,6 +110,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "JavaScript is a popular scripting language essential for web development, enabling interactive and dynamic content in browsers.",
             category: "Programming Language",
             time: "3 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "TypeScript",
@@ -115,6 +118,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "TypeScript is a superset of JavaScript that adds static typing, enhancing code maintainability and scalability.",
             category: "Programming Language",
             time: "2 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "HTML5",
@@ -122,6 +126,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "HTML5 is the standard markup language for structuring web content, supporting modern multimedia and responsive designs.",
             category: "Markup Language",
             time: "4 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "CSS3",
@@ -129,6 +134,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "CSS3 is used to style and layout web pages, enabling responsive designs, animations, and modern UI aesthetics.",
             category: "Style Sheet Language",
             time: "4 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
         ],
 
@@ -140,6 +146,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Django is a high-level Python web framework that promotes rapid development and clean, pragmatic design.",
             category: "Web Framework",
             time: "2 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "Vue.js",
@@ -148,6 +155,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications with ease.",
             category: "Frontend Framework",
             time: "2 Years",
+            used: ["Letter's Soup"],
           },
         ],
 
@@ -167,6 +175,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "MySQL is an open-source relational database management system (RDBMS) widely used for web applications, data storage, and enterprise solutions.",
             category: "Relational Database",
             time: "3 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "MariaDB",
@@ -175,6 +184,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "MariaDB is a fork of MySQL that offers improved performance, security, and additional features while maintaining full compatibility with MySQL.",
             category: "Relational Database",
             time: "3 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "SQLite",
@@ -183,6 +193,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "SQLite is a lightweight, file-based SQL database engine commonly used for embedded applications, mobile apps, and small-scale storage needs.",
             category: "Embedded Database",
             time: "2 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "PostgreSQL",
@@ -191,6 +202,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "PostgreSQL is a powerful, open-source relational database system known for its advanced features, extensibility, and ACID compliance.",
             category: "Relational Database",
             time: "3 Years",
+            used: ["Letter's Soup"],
           },
         ],
         toolsWeb: [
@@ -201,6 +213,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Bootstrap is a popular front-end framework that simplifies responsive web design with pre-built components, CSS utilities, and JavaScript plugins.",
             category: "CSS Framework",
             time: "2 Years",
+            used: [],
           },
           {
             name: "TailwindCSS",
@@ -209,6 +222,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Tailwind CSS is a utility-first CSS framework that allows developers to create modern and responsive designs quickly using utility classes.",
             category: "CSS Framework",
             time: "2 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "Postman",
@@ -217,6 +231,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Postman is an API development and testing tool that simplifies creating, testing, and managing APIs through a user-friendly interface.",
             category: "API Testing & Development",
             time: "2 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "Quasar",
@@ -225,6 +240,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Quasar is a Vue.js-based framework for building responsive and high-performance web, mobile, and desktop applications using a single codebase.",
             category: "Vue Framework",
             time: "2 Years",
+            used: ["Letter's Soup"],
           },
           {
             name: "Electron",
@@ -243,6 +259,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Git is a distributed version control system that allows developers to track changes in their code, collaborate with teams, and manage project history efficiently.",
             category: "Version Control",
             time: "2 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "Github",
@@ -251,6 +268,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "GitHub is a cloud-based platform for hosting and managing Git repositories, enabling collaboration, issue tracking, and continuous integration/deployment.",
             category: "Version Control & Collaboration",
             time: "2 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "Bash",
@@ -259,6 +277,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Bash (Bourne Again Shell) is a Unix shell and command-line interface used for scripting and automating tasks in Linux and macOS environments.",
             category: "Scripting & Automation",
             time: "3 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "Linux",
@@ -267,6 +286,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Linux is an open-source operating system known for its security, stability, and flexibility. It powers servers, desktops, and embedded systems worldwide.",
             category: "Operating System",
             time: "4 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "Figma",
@@ -275,6 +295,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Figma is a web-based design and prototyping tool that enables teams to collaborate in real time on UI/UX designs, wireframes, and prototypes.",
             category: "UI/UX Design",
             time: "2 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "Trello",
@@ -283,6 +304,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Trello is a visual project management tool that uses boards, lists, and cards to help teams organize tasks, track progress, and improve workflow.",
             category: "Project Management",
             time: "2 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
           {
             name: "Chat GPT",
@@ -291,6 +313,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "ChatGPT is an AI-powered chatbot developed by OpenAI that uses natural language processing to generate human-like responses for various applications, including customer support and content generation.",
             category: "Artificial Intelligence & NLP",
             time: "2 Years",
+            used: ["Letter's Soup", "Nomina's Program"],
           },
         ],
 
@@ -298,6 +321,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
         projects: [
           {
             name: "Nomina's Program",
+            link: 'https://github.com/MoralesMortales/Programa_de_Nominas',
             des: `The Nominas Program is a desktop application developed using PyQt, designed to simplify payroll management for businesses. It is compatible with Windows and Linux, providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nThis program was built to help companies streamline the payroll process, ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
             preview: [
               nomina_1,
@@ -312,13 +336,19 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             ],
           },
           {
-            name: "Letters's Soup Program",
+            name: "Letters's Soup",
+            link:"https://github.com/MoralesMortales/letters_soup",
             des:`The Letter Soup Generator is a web-based application built with Vue that allows users to create word search puzzles and export them in PDF format. Additionally, all generated puzzles can be stored in a Django-powered database, enabling users to access and review their previously created word searches.\n\nThe users are immediately presented with the Letter Soup Creator, where they can generate custom word search puzzles effortlessly. While an account is not required to create puzzles, registered users benefit from a history feature that lets them track and revisit their past creations.`,
             preview: [soup_1, soup_2, soup_3, soup_4, soup_5],
             languages: [
               { name: "Python", logo: python_logo },
+              { name: "HTML", logo: html_logo },
+              { name: "CSS", logo: css_logo },
               { name: "JavaScript", logo: js_logo },
               { name: "TypeScript", logo: ts_logo },
+              { name: "TailwindCSS", logo: tailwind_logo },
+              { name: "Quasar", logo: quassar_logo },
+              { name: "Postman", logo: postman_logo },
               { name: "MariaDB", logo: mariadb_logo }
             ],
 

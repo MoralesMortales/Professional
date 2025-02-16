@@ -1,21 +1,24 @@
 <template>
   <div class="">
     <div class="flex flex-col w-screen justify-center items-center">
-      <div class="mb-40" style="color: #000; font-size: 3em">
-        <h3>{{ props.title }}</h3>
+      <div class="mb-40">
+        <h3 style="color:#000; font-size:2.63em">{{ props.title }}</h3>
       </div>
       <div class="w-screen flex justify-around" style="background-color: rgba(91, 54, 54, 0.2)">
         <div v-for="(item, index) in ProfileLanguages">
           <q-btn color="white" text-color="black" round @click="((card = true), (current_item = item))"
             :style="{ width: '6.7em', height: '6.7em' }">
             <img :src="item.logo" alt="sdf" class="w-max h-max p-2" />
+                            <q-tooltip transition-show="fade" style="font-size: 2em" :offset="[0, 10]" transition-hide="fade">
+                  {{ item.name }}
+                </q-tooltip>
           </q-btn>
         </div>
       </div>
     </div>
 
     <div class="q-pa-md q-gutter-sm">
-      <q-dialog v-model="card" :style="{ maxWidth: '100vw', color: '#000' }">
+      <q-dialog v-model="card" :style="{ maxWidth: '99vw', color: '#000' }">
         <q-card class="my-card" bordered style="width: 100%; max-width: 1000px">
           <q-item>
             <img :src="current_item.logo" alt="sdf" class="w-1/12 h-max p-2 mr-4" />
@@ -40,27 +43,14 @@
           <q-separator />
           <q-card-section class="col-4 text-black">
             <h3 class="text-xl mb-6">Projects Where I Used It</h3>
-            <q-carousel animated v-model="slide" navigation infinite :autoplay="autoplay" arrows
-              transition-prev="slide-right" transition-next="slide-left" @mouseenter="autoplay = false"
-              @mouseleave="autoplay = true">
-              <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg">
-                <h6 class="font-extrabold text-white">A Title</h6>
-              </q-carousel-slide>
-
-              <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg">
-                                <h6 class="font-extrabold text-white">A Title</h6>
-
-              </q-carousel-slide>
-              <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg">
-                                <h6 class="font-extrabold text-white">A Title</h6>
-
-              </q-carousel-slide>
-              <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg">
-                                <h6 class="font-extrabold text-white">A Title</h6>
-
-              </q-carousel-slide>
-            </q-carousel>
-          </q-card-section>
+            <div class="">
+<ul v-for="(item, index) in current_item.used" :key="index">
+<li style="font-size: 1.2vw; font-weight: bold; line-height: 3vw;">
+                  {{item}}
+</li>
+</ul>
+            </div>
+                      </q-card-section>
         </q-card>
       </q-dialog>
     </div>

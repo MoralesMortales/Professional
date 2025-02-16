@@ -8,7 +8,17 @@ import '@quasar/extras/material-icons/material-icons.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faInstagram, faYoutube, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+
+import { 
+  faChevronRight, 
+  faChevronLeft,  
+  faMobileScreen, 
+  faEnvelope, 
+  faCalendarDays, 
+  faEarthAmericas, 
+  faSquareCheck,
+  faGraduationCap
+} from '@fortawesome/free-solid-svg-icons'
 
 import { Quasar } from 'quasar';
 import 'quasar/dist/quasar.css'; // Estilos de Quasar
@@ -20,6 +30,12 @@ library.add(faGithub);
 library.add(faLinkedin);
 library.add(faChevronRight)
 library.add(faChevronLeft)
+library.add(faMobileScreen)
+library.add(faEnvelope)
+library.add(faCalendarDays)
+library.add(faEarthAmericas)
+library.add(faSquareCheck)
+library.add(faGraduationCap)
 
 const app = createApp(App)
 

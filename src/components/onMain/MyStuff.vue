@@ -1,11 +1,11 @@
 <template>
-  <div style="margin-top: 9em; height: 80vh;" class="flex justify-center items-center">
+  <div style="margin-top: 9em; height: 80vh;" class="flex justify-center items-center" id="myStuffId">
     <div class="flex w-screen justify-center items-center">
-      <div class="flex gap-5 justify-center items-center mb-24" style="background-color: #333;">
+      <div class="flex gap-5 justify-center items-center mb-24 scale-90 rounded-sm container_choose">
       <button @click='goLeft()' class="hover:text-gray-500 py-5 pl-5 transition-all">
         <font-awesome-icon :icon="['fas', 'chevron-left']" size="3x" />
       </button>
-      <h3 style="color: #eee;">Choose the topic</h3>
+      <h3 style="color: #eee; font-size:40px;">Choose the topic</h3>
       <button @click='goRight()' class="hover:text-gray-500 py-5 pr-5 transition-all">
         <font-awesome-icon :icon="['fas', 'chevron-right']" size="3x" />
       </button>
@@ -46,4 +46,13 @@ console.log('dss')
 
 </script>
 
-<style scope></style>
+<style scope>
+.container_choose{
+background-color:#333;
+transition:.08s all ease;
+}
+.container_choose:hover{
+background-color:#000;
+transition:.04s all ease;
+}
+</style>

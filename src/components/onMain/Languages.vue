@@ -1,7 +1,7 @@
 <template>
   <section
     id="which_languages_I_know"
-    class="flex flex-col items-center section h-screen justify-center"
+    class="flex flex-row items-center section justify-center"
   >
     <div
       id="Presenting_lgs"
@@ -28,7 +28,7 @@
           <div class="">
             <div class="p-5">
               <div id="headerlanguages" class="flex flex-row relative justify-between px-1 w-full" >
-                <h3 class="title">{{ item.name }}</h3>
+                <h3 class="title" style="font-size: 20px;">{{ item.name }}</h3>
                 <img :src="item.logo" alt="Language Image" class="flag"/>
               </div>
             </div>
@@ -114,6 +114,7 @@ max-height: 8vh;
   width: 75vw;
 justify-content: space-around;
 gap: 35px;
+  flex-wrap: wrap;
 
 }
 
@@ -129,8 +130,15 @@ font-size: 28px;
   font-style: normal;
 }
 
+.language:hover .language-mini-containers {
+  background-color: rgba(0, 0, 0, 0.19);
+  transition: .1s all ease;
+  cursor: pointer;
+}
+
 .language-mini-containers{
   width: 25vw;
+  max-width: 420px;
   height: 26vw;
   min-height: 280px;
   grid-template-columns: 1fr; 
@@ -144,5 +152,12 @@ font-size: 28px;
   -o-border-radius: 9px;
   min-width: 300px;
   background-size: cover;
+  background-blend-mode: multiply;
 }
+
+#which_languages_I_know{
+  min-height: 100vh;
+
+}
+
 </style>
