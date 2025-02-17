@@ -37,7 +37,6 @@ import electron_logo from "../assets/Img/electron_logo.png";
 import bash_logo from "../assets/Img/bash_logo.png";
 import git_logo from "../assets/Img/git_logo.png";
 import github_logo from "../assets/Img/github_logo.png";
-import debian_logo from "../assets/Img/debian_logo.png";
 import figma_logo from "../assets/Img/figma_logo.png";
 import gpt_logo from "../assets/Img/gpt_logo.png";
 import trello_logo from "../assets/Img/trello_logo.png";

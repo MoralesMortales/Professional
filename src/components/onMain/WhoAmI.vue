@@ -116,7 +116,7 @@
                 </h4>
               </div>
               <div class="bout absolute bottom-0 flex justify-center items-center w-1/2">
-                <a href="../../assets/Profile_Img/CARLOS MORAL (1).pdf"  target="_blank" style="border: 1px rgba(0,0,0,.8) solid;" class="a_corned bg-slate-200 w-full flex justify-center items-center">
+                <a href="cv.pdf"  target="_blank" style="border: 1px rgba(0,0,0,.8) solid;" class="a_corned bg-slate-200 w-full flex justify-center items-center">
                   <h5 class="text-nowrap" style="font-size: 1vw; z-index: 10;">
                     Download CV
                   </h5>
