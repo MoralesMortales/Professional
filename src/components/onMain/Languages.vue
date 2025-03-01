@@ -159,5 +159,52 @@ font-size: 28px;
   min-height: 100vh;
 
 }
+    #art .flag{
+max-height: 87%;
+}
 
+@media (max-width: 1024px) {
+  .language-mini-containers{
+    width: 40vw;
+    max-width: 24em;
+  height: 836vw;
+    max-height: 390px;
+  }
+  #art{
+    width: 100%;
+    gap: 5em 2em;
+}
+
+    #art .flag{
+max-height: 80%;
+}
+
+}
+
+@media (max-width: 720px) {
+.language-mini-containers{
+  width: 80vw;
+    max-width: 7000em;
+  height: 86vw;
+    max-height: 390px;
+  }
+  #art{
+    width: 100%;
+}
+
+
+}
+
+
+@media (max-width:420px) {
+  #art .flag{
+max-height: 70%;
+}
+}
+
+@media (max-width: 400px) {
+  .language-mini-containers{
+  width: 40vw;
+  }
+}
 </style>
