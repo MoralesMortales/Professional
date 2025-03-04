@@ -73,13 +73,6 @@
             <div class="nro_g flex flex-col">
               <div class="bout">
                 <div class="b2">
-                  <font-awesome-icon :icon="['fas', 'mobile-screen']" />
-                  <h4 class="b3">Phone Number</h4>
-                </div>
-                <h4 class="b3 b4">+58 412-8816-267</h4>
-              </div>
-              <div class="bout">
-                <div class="b2">
                   <font-awesome-icon :icon="['fas', 'envelope']" />
                   <h4 class="b3">Email</h4>
                 </div>
