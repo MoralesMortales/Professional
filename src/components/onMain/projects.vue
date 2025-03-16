@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="flex justify-center items-center gap-7 righte" style="height: 40em; padding: 3em">
+        <div class="flex justify-center items-center gap-7 righte box_right" style="padding: 3em">
           <q-carousel animated v-model="slide" navigation infinite :autoplay="autoplay" arrows
             transition-prev="slide-right" control-color="dark" control-type="outline" transition-next="slide-left"
             @mouseenter="autoplay = false" @mouseleave="autoplay = true" style="width: 100%; height: 90%"
@@ -61,7 +61,7 @@
       </div>
 
       <!-- Botones para cambiar de proyecto -->
-      <div class="flex gap-4 mb-12">
+      <div class="flex gap-4 mb-12 flex-wrap justify-around px-4">
         <button v-for="(project, index) in ProfileProjectsName" :key="index" @click="setCurrentProject(index)"
           class="px-4 py-2 rounded-lg" :class="{
             'bg-teal-400 text-black': currentProjectIndex === index,
@@ -144,6 +144,10 @@ console.log("Preview:", currentProject.value.preview);
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.box_right{
+height: 40em;
+}
+
 .content_imgs {
   position: relative;
   overflow-x: hidden;
@@ -195,12 +199,22 @@ console.log("Preview:", currentProject.value.preview);
   font-size: clamp(20px, 4vw, 45px);
   padding-top: 20px;
 }
+@media (max-width: 1024px) {
+.box_right{
+height: 30em;
+}
+}
 
 @media (max-width: 930px) {
   .maine {
     flex-direction: column;
     padding-bottom: 3em;
   }
+
+.box_right{
+height: 30em;
+}
+
 
   .des {
     padding: 0;

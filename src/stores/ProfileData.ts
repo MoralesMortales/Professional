@@ -18,7 +18,7 @@ import css_logo from "../assets/Img/css_logo.png";
 //frameworks
 import django_logo from "../assets/Img/django_logo.png";
 import vue_logo from "../assets/Img/vueJs_logo.png";
-import pyqt from "../assets/Img/pyqt.png"
+import pyqt from "../assets/Img/pyqt.png";
 
 //databases
 import mysql_logo from "../assets/Img/mysql_logo.png";
@@ -51,11 +51,16 @@ import nomina_4 from "../assets/projects/nomina/4.png";
 
 //letter soup project
 
-import soup_1 from "../assets/projects/letter_soup/1.png"
-import soup_2 from "../assets/projects/letter_soup/2.png"
-import soup_3 from "../assets/projects/letter_soup/3.png"
+import soup_1 from "../assets/projects/letter_soup/1.png";
+import soup_2 from "../assets/projects/letter_soup/2.png";
+import soup_3 from "../assets/projects/letter_soup/3.png";
 import soup_4 from "../assets/projects/letter_soup/4.png";
 import soup_5 from "../assets/projects/letter_soup/5.png";
+
+//pokegame project
+
+import pokegame_1 from "../assets/projects/pokegame/pokemon_1.png";
+import pokegame_2 from "../assets/projects/pokegame/pokemon_2.png";
 
 export const useProfileDataStore = defineStore("useProfileDataStore", {
   state: () => ({
@@ -317,27 +322,24 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
         ],
 
         softAbilities: [],
+
         projects: [
           {
             name: "Nomina's Program",
-            link: 'https://github.com/MoralesMortales/Programa_de_Nominas',
+            link: "https://github.com/MoralesMortales/Programa_de_Nominas",
             des: `The Nominas Program is a desktop application developed using PyQt, designed to simplify payroll management for businesses. It is compatible with Windows and Linux, providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nThis program was built to help companies streamline the payroll process, ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
-            preview: [
-              nomina_1,
-              nomina_2,
-              nomina_3,
-              nomina_4 ],
+            preview: [nomina_1, nomina_2, nomina_3, nomina_4],
 
             languages: [
-              { name: "Python", logo: python_logo},
+              { name: "Python", logo: python_logo },
               { name: "PyQt", logo: pyqt },
-              { name: "MariaDB", logo: mariadb_logo }
+              { name: "MariaDB", logo: mariadb_logo },
             ],
           },
           {
             name: "Letters's Soup",
-            link:"https://github.com/MoralesMortales/letters_soup",
-            des:`The Letter Soup Generator is a web-based application built with Vue that allows users to create word search puzzles and export them in PDF format. Additionally, all generated puzzles can be stored in a Django-powered database, enabling users to access and review their previously created word searches.\n\nThe users are immediately presented with the Letter Soup Creator, where they can generate custom word search puzzles effortlessly. While an account is not required to create puzzles, registered users benefit from a history feature that lets them track and revisit their past creations.`,
+            link: "https://github.com/MoralesMortales/letters_soup",
+            des: `The Letter Soup Generator is a web-based application built with Vue that allows users to create word search puzzles and export them in PDF format. Additionally, all generated puzzles can be stored in a Django-powered database, enabling users to access and review their previously created word searches.\n\nThe users are immediately presented with the Letter Soup Creator, where they can generate custom word search puzzles effortlessly. While an account is not required to create puzzles, registered users benefit from a history feature that lets them track and revisit their past creations.`,
             preview: [soup_1, soup_2, soup_3, soup_4, soup_5],
             languages: [
               { name: "Python", logo: python_logo },
@@ -348,9 +350,22 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Quasar", logo: quassar_logo },
               { name: "Postman", logo: postman_logo },
-              { name: "MariaDB", logo: mariadb_logo }
+              { name: "MariaDB", logo: mariadb_logo },
             ],
-
+          },
+          {
+            name: "Pokegame",
+            link: "moralesmortales.github.io/pokegame/",
+            des: `This is a fun and engaging game where your goal is to guess the correct Pokémon from a set of multiple-choice options. The mechanics are designed to test your knowledge of Pokémon, challenging you to identify the right one based on silhouettes. Your objective is to score as many points as possible by making accurate guesses.\n\nThe game is built using Vue.js and leverages Axios to interact with a Pokémon API. This allows the game to fetch and display Pokémon data dynamically, ensuring a fresh and exciting experience with each playthrough.`,
+            preview: [pokegame_1, pokegame_2],
+            languages: [
+              { name: "HTML", logo: html_logo },
+              { name: "CSS", logo: css_logo },
+              { name: "JavaScript", logo: js_logo },
+              { name: "TypeScript", logo: ts_logo },
+              { name: "TailwindCSS", logo: tailwind_logo },
+              { name: "Postman", logo: postman_logo },
+            ],
           },
         ],
       },

@@ -4,6 +4,7 @@
   <Languages/>
   <MyStuff />
   <projects />
+  <Info />
   <Footer />
 </template>
 
@@ -15,6 +16,7 @@ import WhoAmI from './onMain/WhoAmI.vue'
 import Languages from './onMain/Languages.vue'
 import MyStuff from './onMain/MyStuff.vue'
 import projects from './onMain/projects.vue'
+import Info from './onMain/Info.vue'
 
 </script>
 
