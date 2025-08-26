@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+
 import spanishLogo from "../assets/Img/spanish_flag.png";
 import englishLogo from "../assets/Img/flag_english.png";
 import germanLogo from "../assets/Img/germany_flag.png";
@@ -48,6 +49,13 @@ import nomina_1 from "../assets/projects/nomina/msin.png";
 import nomina_2 from "../assets/projects/nomina/2.png";
 import nomina_3 from "../assets/projects/nomina/3.png";
 import nomina_4 from "../assets/projects/nomina/4.png";
+
+//nomina web project
+
+import nominaWeb_1 from "../assets/projects/paycheck_2_web/1.png"
+import nominaWeb_2 from "../assets/projects/paycheck_2_web/2.png"
+import nominaWeb_3 from "../assets/projects/paycheck_2_web/3.png"
+import nominaWeb_4 from "../assets/projects/paycheck_2_web/4.png"
 
 //letter soup project
 
@@ -106,7 +114,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Python is a versatile, high-level programming language known for its simplicity and readability, widely used in web development, AI, and data science.",
             category: "Programming Language",
             time: "3 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "JavaScript",
@@ -138,7 +146,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "CSS3 is used to style and layout web pages, enabling responsive designs, animations, and modern UI aesthetics.",
             category: "Style Sheet Language",
             time: "4 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
         ],
 
@@ -179,7 +187,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "MySQL is an open-source relational database management system (RDBMS) widely used for web applications, data storage, and enterprise solutions.",
             category: "Relational Database",
             time: "3 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "MariaDB",
@@ -188,7 +196,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "MariaDB is a fork of MySQL that offers improved performance, security, and additional features while maintaining full compatibility with MySQL.",
             category: "Relational Database",
             time: "3 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "SQLite",
@@ -197,7 +205,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "SQLite is a lightweight, file-based SQL database engine commonly used for embedded applications, mobile apps, and small-scale storage needs.",
             category: "Embedded Database",
             time: "2 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "PostgreSQL",
@@ -263,7 +271,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Git is a distributed version control system that allows developers to track changes in their code, collaborate with teams, and manage project history efficiently.",
             category: "Version Control",
             time: "2 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Github",
@@ -272,7 +280,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "GitHub is a cloud-based platform for hosting and managing Git repositories, enabling collaboration, issue tracking, and continuous integration/deployment.",
             category: "Version Control & Collaboration",
             time: "2 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Bash",
@@ -281,7 +289,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Bash (Bourne Again Shell) is a Unix shell and command-line interface used for scripting and automating tasks in Linux and macOS environments.",
             category: "Scripting & Automation",
             time: "3 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Linux",
@@ -290,7 +298,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Linux is an open-source operating system known for its security, stability, and flexibility. It powers servers, desktops, and embedded systems worldwide.",
             category: "Operating System",
             time: "4 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Figma",
@@ -299,7 +307,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Figma is a web-based design and prototyping tool that enables teams to collaborate in real time on UI/UX designs, wireframes, and prototypes.",
             category: "UI/UX Design",
             time: "2 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Trello",
@@ -308,7 +316,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Trello is a visual project management tool that uses boards, lists, and cards to help teams organize tasks, track progress, and improve workflow.",
             category: "Project Management",
             time: "2 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Chat GPT",
@@ -317,7 +325,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "ChatGPT is an AI-powered chatbot developed by OpenAI that uses natural language processing to generate human-like responses for various applications, including customer support and content generation.",
             category: "Artificial Intelligence & NLP",
             time: "2 Years",
-            used: ["Letter's Soup", "Nomina's Program"],
+            used: ["Letter's Soup", "Paycheck Program"],
           },
         ],
 
@@ -325,9 +333,9 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
 
         projects: [
           {
-            name: "Nomina's Program",
+            name: "Paycheck Program (Desktop)",
             link: "https://github.com/MoralesMortales/Programa_de_Nominas",
-            des: `The Nominas Program is a desktop application developed using PyQt, designed to simplify payroll management for businesses. It is compatible with Windows and Linux, providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nThis program was built to help companies streamline the payroll process, ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
+            des: `The Paycheck Program is a desktop application developed using PyQt, designed to simplify payroll management for businesses. It is compatible with Windows and Linux, providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nThis program was built to help companies streamline the payroll process, ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
             preview: [nomina_1, nomina_2, nomina_3, nomina_4],
 
             languages: [
@@ -336,6 +344,19 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
               { name: "MariaDB", logo: mariadb_logo },
             ],
           },
+                    {
+            name: "Paycheck Web Program",
+            link: "https://github.com/MoralesMortales/Programa_de_Nominas",
+            des: `The Paycheck Web Program is a web tool developed to be used in an infranet on a private network, designed to simplify payroll management for businesses. It can be used mostly all web browsers (firefox, opera, brave, chrome), providing a user-friendly interface to efficiently handle employee payments and documentation.\n\n, Always ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
+            preview: [nominaWeb_1, nominaWeb_2, nominaWeb_3, nominaWeb_4],
+
+            languages: [
+              { name: "Python", logo: python_logo },
+              { name: "PyQt", logo: pyqt },
+              { name: "MariaDB", logo: mariadb_logo },
+            ],
+          },
+
           {
             name: "Letters's Soup",
             link: "https://github.com/MoralesMortales/letters_soup",
