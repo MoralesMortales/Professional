@@ -48,6 +48,7 @@ import figma_logo from "../assets/Img/figma_logo.png";
 import gpt_logo from "../assets/Img/gpt_logo.png";
 import trello_logo from "../assets/Img/trello_logo.png";
 import linux_logo from "../assets/Img/linulogo.png";
+import windows_logo from "../assets/Img/windows_logo.png";
 
 //nomina project
 
@@ -201,9 +202,9 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
           },
           
           {
-            name: "Vue.js",
+            name: "React",
             level: "Intermediate",
-            logo: vue_logo,
+            logo: react_logo,
             des: "Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications with ease.",
             category: "Frontend Framework",
             time: "2 Years",
@@ -211,9 +212,9 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
           },
 
           {
-            name: "Vue.js",
+            name: "Laravel",
             level: "Intermediate",
-            logo: vue_logo,
+            logo: laravel_logo,
             des: "Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications with ease.",
             category: "Frontend Framework",
             time: "2 Years",
@@ -277,7 +278,16 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             category: "CSS Framework",
             time: "2 Years",
             used: [],
+          },{
+            name: "Pinia",
+            link: "www.algo.com",
+            logo: pinia_logo,
+            des: "Bootstrap is a popular front-end framework that simplifies responsive web design with pre-built components, CSS utilities, and JavaScript plugins.",
+            category: "CSS Framework",
+            time: "2 Years",
+            used: [],
           },
+
           {
             name: "TailwindCSS",
             link: "www.algo.com",
@@ -350,6 +360,14 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             category: "Operating System",
             time: "4 Years",
             used: ["Letter's Soup", "Paycheck Program"],
+          },          {
+            name: "Windows",
+            link: "www.algo.com",
+            logo: windows_logo,
+            des: "Linux is an open-source operating system known for its security, stability, and flexibility. It powers servers, desktops, and embedded systems worldwide.",
+            category: "Operating System",
+            time: "4 Years",
+            used: ["Letter's Soup", "Paycheck Program"],
           },
           {
             name: "Figma",
@@ -360,16 +378,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             time: "2 Years",
             used: ["Letter's Soup", "Paycheck Program"],
           },
-          {
-            name: "Trello",
-            link: "www.algo.com",
-            logo: trello_logo,
-            des: "Trello is a visual project management tool that uses boards, lists, and cards to help teams organize tasks, track progress, and improve workflow.",
-            category: "Project Management",
-            time: "2 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
-          },
-          {
+                {
             name: "Chat GPT",
             link: "www.algo.com",
             logo: gpt_logo,
