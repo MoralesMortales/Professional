@@ -19,6 +19,8 @@ import php_logo from "../assets/Img/php_logo.png";
 import laravel_logo from "../assets/Img/laravel_logo.png";
 import nodejs_logo from "../assets/Img/nodejs_logo.png";
 import react_logo from "../assets/Img/react_logo.png";
+import docker_logo from "../assets/Img/docker_logo.png";
+import pinia_logo from "../assets/Img/pinia_logo.png";
 
 //frameworks
 import django_logo from "../assets/Img/django_logo.png";
@@ -53,6 +55,14 @@ import nomina_1 from "../assets/projects/nomina/msin.png";
 import nomina_2 from "../assets/projects/nomina/2.png";
 import nomina_3 from "../assets/projects/nomina/3.png";
 import nomina_4 from "../assets/projects/nomina/4.png";
+
+//portfolio
+
+import port1 from "../assets/projects/professional/1.jpeg";
+import port2 from "../assets/projects/professional/2.jpeg";
+import port3 from "../assets/projects/professional/3.jpeg";
+import port4 from "../assets/projects/professional/4.jpeg";
+import port5 from "../assets/projects/professional/5.jpeg";
 
 //nomina web project
 
@@ -109,13 +119,20 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             img: spanishImg,
           },
           { name: "English", level: "C1", logo: englishLogo, img: englishImg },
-          { name: "German", level: "A2", logo: germanLogo, img: germanImg },
+          { name: "German", level: "B1", logo: germanLogo, img: germanImg },
         ],
 
         programming_languages: [
           {
             name: "C++",
             logo: cpp_logo,
+            des: "C++ is a powerful, high-performance programming language used for system/software development, game development, and real-time applications.",
+            category: "Programming Language",
+            time: "2 Years",
+            used: [""],
+          },          {
+            name: "PHP",
+            logo: php_logo,
             des: "C++ is a powerful, high-performance programming language used for system/software development, game development, and real-time applications.",
             category: "Programming Language",
             time: "2 Years",
@@ -182,6 +199,27 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             time: "2 Years",
             used: ["Letter's Soup"],
           },
+          
+          {
+            name: "Vue.js",
+            level: "Intermediate",
+            logo: vue_logo,
+            des: "Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications with ease.",
+            category: "Frontend Framework",
+            time: "2 Years",
+            used: ["Letter's Soup"],
+          },
+
+          {
+            name: "Vue.js",
+            level: "Intermediate",
+            logo: vue_logo,
+            des: "Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications with ease.",
+            category: "Frontend Framework",
+            time: "2 Years",
+            used: ["Letter's Soup"],
+          },
+
         ],
 
         socialMedia: [
@@ -372,6 +410,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
               { name: "JavaScript", logo: js_logo },
               { name: "Figma", logo: figma_logo },
               { name: "MariaDB", logo: mariadb_logo },
+              { name: "Docker", logo: docker_logo },
             ],
           },
           {
@@ -411,6 +450,7 @@ A system created to help a train company to create and manage their trips on an 
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Quasar", logo: quassar_logo },
               { name: "Postman", logo: postman_logo },
+              { name: "Figma", logo: figma_logo },
             ],
           },
           {
@@ -426,6 +466,23 @@ A system created to help a train company to create and manage their trips on an 
               { name: "Postman", logo: postman_logo },
             ],
           },
+            {
+            name: "Portfolio",
+            link: "https://github.com/MoralesMortales/Programa_de_Nominas",
+            des: `The Paycheck Program is a desktop application developed using PyQt, designed to simplify payroll management for businesses. It is compatible with Windows and Linux, providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nThis program was built to help companies streamline the payroll process, ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
+            preview: [port1, port2, port3, port4, port5],
+
+            languages: [
+              { name: "Vuejs", logo: vue_logo },
+              { name: "JavaScript", logo: js_logo },
+              { name: "HTML", logo: html_logo },
+              { name: "CSS", logo: css_logo },
+              { name: "Pinia", logo: pinia_logo },
+              { name: "Quasar", logo: quassar_logo },
+              { name: "Figma", logo: figma_logo },
+            ],
+          },
+
         ],
       },
     ],

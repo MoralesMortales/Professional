@@ -12,12 +12,6 @@
             <h5 id="theH5">Full-Stack Programmer</h5>
 
             <div class="flex mt-3 justify-around w-full">
-              <a href="https://www.instagram.com/alberto15123/">
-                <font-awesome-icon :icon="['fab', 'instagram']" color="#eee" size="3x" class="ic" />
-              </a>
-              <a href="">
-                <font-awesome-icon :icon="['fab', 'youtube']" color="#eee" size="3x" class="ic" />
-              </a>
               <a href="https://github.com/MoralesMortales">
                 <font-awesome-icon :icon="['fab', 'github']" color="#eee" size="3x" class="ic" />
               </a>

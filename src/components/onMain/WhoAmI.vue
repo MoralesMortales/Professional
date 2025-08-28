@@ -98,7 +98,7 @@
                   <h4 class="b3">Semester</h4>
                 </div>
                 <h4 class="b3 b4">
-                  6<sup>th</sup> Semester
+                  7<sup>th</sup> Semester
                   <span class="text-slate-700">(out of 8)</span>
                 </h4>
               </div>
