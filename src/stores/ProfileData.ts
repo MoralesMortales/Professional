@@ -333,7 +333,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
 
         projects: [
           {
-            name: "Paycheck Program (Desktop)",
+            name: "Paycheck Program",
             link: "https://github.com/MoralesMortales/Programa_de_Nominas",
             des: `The Paycheck Program is a desktop application developed using PyQt, designed to simplify payroll management for businesses. It is compatible with Windows and Linux, providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nThis program was built to help companies streamline the payroll process, ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
             preview: [nomina_1, nomina_2, nomina_3, nomina_4],
@@ -347,12 +347,12 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
                     {
             name: "Paycheck Web Program",
             link: "https://github.com/MoralesMortales/Programa_de_Nominas",
-            des: `The Paycheck Web Program is a web tool developed to be used in an infranet on a private network, designed to simplify payroll management for businesses. It can be used mostly all web browsers (firefox, opera, brave, chrome), providing a user-friendly interface to efficiently handle employee payments and documentation.\n\n, Always ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
+            des: `The Paycheck Web Program is a web tool developed to be used in an infranet on a private network, designed to simplify payroll management for businesses. It can be used mostly all web browsers (firefox, opera, brave, chrome), providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nAlways ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
             preview: [nominaWeb_1, nominaWeb_2, nominaWeb_3, nominaWeb_4],
 
             languages: [
-              { name: "Python", logo: python_logo },
-              { name: "PyQt", logo: pyqt },
+              { name: "JavaScript", logo: js_logo },
+              { name: "Figma", logo: figma_logo },
               { name: "MariaDB", logo: mariadb_logo },
             ],
           },

@@ -28,31 +28,26 @@
       v-show="currentIndex == 1"
       title="Programming Languages"
       content="getProgrammingLanguages"
-      style="margin-bottom: 16em"
     />
     <myStuffList
       v-show="currentIndex == 2"
       title="Frameworks"
       content="getFrameworks"
-      style="margin-bottom: 16em"
     />
     <myStuffList
       v-show="currentIndex == 3"
       title="Databases Management"
       content="getDatabases"
-      style="margin-bottom: 16em"
     />
     <myStuffList
       v-show="currentIndex == 4"
       title="Tools I Use (Web)"
       content="getToolsWeb"
-      style="margin-bottom: 16em"
     />
     <myStuffList
       v-show="currentIndex == 5"
       title="Tools I Use (General)"
       content="getToolsGeneral"
-      style="margin-bottom: 16em"
     />
   </div>
 </template>

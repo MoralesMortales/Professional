@@ -60,6 +60,13 @@ const ProfileLanguages = ref(ProfileInfo.getLanguages);
 
 <style scoped>
 
+@media (max-width: 1440px) {
+.language-mini-containers{
+
+}
+}
+
+
 #city-london-bg{
   background-image: url('../../../assets/Img/English_Image.png');
   background-size: cover;

@@ -2,8 +2,8 @@
   <div style="" class="flex main" id="projectsId">
     <div class="flex w-1/12"></div>
 
-    <div style="width: 85vw" class="bg-slate-200 text-black flex flex-col justify-around items-center">
-      <div class="theT">PROJECTS</div>
+    <div style="width: 85vw" class="maintainedBase bg-slate-200 text-black flex flex-col justify-around items-center">
+      <div class="theT"><h3 class="theTiii">PROJECTS</h3></div>
 
       <div class="flex justify-around w-full maine">
         <div class="flex-col flex items-center lefte justify-around p-7">
@@ -11,7 +11,7 @@
             {{ currentProject.name }}
           </h3>
           <div class="flex lefte_i w-full gap-4 flex-wrap h-5/12 hover:overflow-y-scroll overflow-x-hidden">
-            <p style="white-space: pre-line; text-align: justify; font-size: 1em" class="des">
+            <p style="white-space: pre-line; text-align: justify;" class="des">
               {{ currentProject.des }}
             </p>
           </div>
@@ -120,6 +120,26 @@ console.log("Preview:", currentProject.value.preview);
 </script>
 
 <style scoped>
+
+  .theTiii{
+    padding:30px 0;
+  }
+@media (max-width: 1440px) {
+ .textBoxMade {
+  font-size: clamp(0.71em, 2vw, 1.5em);
+
+  }
+
+      .des {
+    font-size: clamp(0.81em, 2vw, .9em);
+  }
+
+  .theTiii{
+  font-size: clamp(.72em, 2vw, 10.5em);
+    padding:30px 0;
+  }
+}
+
 .q-carousel-slide {
   background: #000;
 }
@@ -199,21 +219,30 @@ height: 40em;
   font-size: clamp(20px, 4vw, 45px);
   padding-top: 20px;
 }
+
+
+
 @media (max-width: 1024px) {
 .box_right{
 height: 30em;
 }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1130px) {
   .maine {
     flex-direction: column;
     padding-bottom: 3em;
   }
 
+  .textBoxMade {
+  font-size: clamp(0.71em, 2vw, 1.2em);
+    background-color: "#000";
+}
+
 .box_right{
 height: 30em;
 }
+
 
 
   .des {

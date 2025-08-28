@@ -1,12 +1,12 @@
 <template>
-  <div class="">
+  <div class="containerBase">
     <div class="flex flex-col justify-center items-center">
       <div class="mb-40">
         <h3 style="color: #000;" class="namee">{{ props.title }}</h3>
       </div>
       <div
-        class="flex justify-around"
-        style="background-color: rgba(91, 54, 54, 0.2); width: 99.4vw"
+        class="btnsContainer flex justify-around "
+        style="background-color: rgba(91, 54, 54, 0.2); width: 99vw"
       >
         <div v-for="(item, index) in ProfileLanguages">
           <q-btn
@@ -120,6 +120,14 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
+.containerBase{
+  margin-bottom: 16em;
+}
+  btnsContainer{
+max-height: 10px;
+  }
+
 .anImg {
 }
 
@@ -140,6 +148,24 @@ list-style-type: square;
     line-height: 44px;
   margin-left: 1.2em;
   }
+
+@media (max-width: 1440px) {
+  .btns {
+    max-width: 100px;
+    width: 10vw;
+  }
+.containerBase{
+  margin-bottom: 10em;
+}
+
+.namee {
+  font-size: clamp(1px,5.6vw,40px);
+}
+  .title_po{
+    font-size: clamp(1px,4.2vw,20px);
+    line-height: 44px;
+  }
+}
 
 @media (max-width: 1024px) {
   .btns {
@@ -188,5 +214,6 @@ list-style-type: square;
     font-size: clamp(1px,4.2vw,20px);
     line-height: 44px;
   }
+
 }
 </style>
