@@ -117,7 +117,7 @@
               </div>
 
               <div class="bout download absolute lg:bottom-0 flex justify-center items-center lg:w-1/2">
-                <a href="cv.pdf" target="_blank" style="border: 1px rgba(0, 0, 0, 0.8) solid"
+                <a href="/professional/cv.pdf" target="_blank" style="border: 1px rgba(0, 0, 0, 0.8) solid"
                   class="a_corned bg-slate-200 w-full flex justify-center items-center">
                   <h5 class="text-nowrap" id="download_text">Download CV</h5>
                 </a>

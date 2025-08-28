@@ -16,15 +16,27 @@
             </p>
           </div>
           <div class="w-max flex justify-center h-5/12 items-center rounded-lg">
-            <button class="py-6 px-20 bg-teal-400 hover:bg-teal-300 rounded-lg" @click="goToProject(currentProject.link)">
+            
+            <button v-if="currentProject.access" class="py-6 px-20 bg-teal-400 hover:bg-teal-300 rounded-lg" @click="goToProject(currentProject.link)">
               <h6 style="
                   font-weight: bold;
                   font-family: Arial, Helvetica, sans-serif;
                   color: #444;
                 ">
-                Test It!
+                Find More!
               </h6>
             </button>
+
+            <button v-else class="py-6 px-20 bg-gray-300 rounded-lg">
+              <h6 style="
+                  font-weight: bold;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #444;
+                ">
+                Not Public
+              </h6>
+            </button>
+
           </div>
         </div>
 
