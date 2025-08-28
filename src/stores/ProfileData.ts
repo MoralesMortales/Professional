@@ -15,6 +15,10 @@ import js_logo from "../assets/Img/js.png";
 import ts_logo from "../assets/Img/ts.png";
 import html_logo from "../assets/Img/html_logo.png";
 import css_logo from "../assets/Img/css_logo.png";
+import php_logo from "../assets/Img/php_logo.png";
+import laravel_logo from "../assets/Img/laravel_logo.png";
+import nodejs_logo from "../assets/Img/nodejs_logo.png";
+import react_logo from "../assets/Img/react_logo.png";
 
 //frameworks
 import django_logo from "../assets/Img/django_logo.png";
@@ -52,10 +56,10 @@ import nomina_4 from "../assets/projects/nomina/4.png";
 
 //nomina web project
 
-import nominaWeb_1 from "../assets/projects/paycheck_2_web/1.png"
-import nominaWeb_2 from "../assets/projects/paycheck_2_web/2.png"
-import nominaWeb_3 from "../assets/projects/paycheck_2_web/3.png"
-import nominaWeb_4 from "../assets/projects/paycheck_2_web/4.png"
+import nominaWeb_1 from "../assets/projects/paycheck_2_web/1.png";
+import nominaWeb_2 from "../assets/projects/paycheck_2_web/2.png";
+import nominaWeb_3 from "../assets/projects/paycheck_2_web/3.png";
+import nominaWeb_4 from "../assets/projects/paycheck_2_web/4.png";
 
 //letter soup project
 
@@ -64,6 +68,15 @@ import soup_2 from "../assets/projects/letter_soup/2.png";
 import soup_3 from "../assets/projects/letter_soup/3.png";
 import soup_4 from "../assets/projects/letter_soup/4.png";
 import soup_5 from "../assets/projects/letter_soup/5.png";
+
+//TrainSystem project
+
+import trainSystem_1 from "../assets/projects/trainSystem_laravel/1.png";
+import trainSystem_2 from "../assets/projects/trainSystem_laravel/2.png";
+import trainSystem_3 from "../assets/projects/trainSystem_laravel/3.png";
+import trainSystem_4 from "../assets/projects/trainSystem_laravel/4.png";
+import trainSystem_5 from "../assets/projects/trainSystem_laravel/5.png";
+import trainSystem_6 from "../assets/projects/trainSystem_laravel/6.png";
 
 //pokegame project
 
@@ -341,17 +354,46 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             languages: [
               { name: "Python", logo: python_logo },
               { name: "PyQt", logo: pyqt },
+              { name: "Figma", logo: figma_logo },
               { name: "MariaDB", logo: mariadb_logo },
             ],
           },
-                    {
+          {
             name: "Paycheck Web Program",
             link: "https://github.com/MoralesMortales/Programa_de_Nominas",
             des: `The Paycheck Web Program is a web tool developed to be used in an infranet on a private network, designed to simplify payroll management for businesses. It can be used mostly all web browsers (firefox, opera, brave, chrome), providing a user-friendly interface to efficiently handle employee payments and documentation.\n\nAlways ensuring accurate and organized salary calculations for employees. It is tailored for businesses that need to generate payrolls with different payment frequencies while maintaining full control over employee records and payment receipts.`,
             preview: [nominaWeb_1, nominaWeb_2, nominaWeb_3, nominaWeb_4],
 
             languages: [
+              { name: "NodeJS", logo: nodejs_logo },
+              { name: "React", logo: react_logo },
+              { name: "HTML", logo: html_logo },
+              { name: "CSS", logo: css_logo },
               { name: "JavaScript", logo: js_logo },
+              { name: "Figma", logo: figma_logo },
+              { name: "MariaDB", logo: mariadb_logo },
+            ],
+          },
+          {
+            name: "Train System",
+            link: "https://github.com/MoralesMortales/Programa_de_Nominas",
+            des: `
+A system created to help a train company to create and manage their trips on an online way, making possible to the clients to make reservations online, and the train company manage these.
+`,
+            preview: [
+              trainSystem_1,
+              trainSystem_2,
+              trainSystem_3,
+              trainSystem_4,
+              trainSystem_5,
+              trainSystem_6,
+            ],
+
+            languages: [
+              { name: "PHP", logo: php_logo },
+              { name: "Laravel", logo: laravel_logo },
+              { name: "HTML", logo: html_logo },
+              { name: "CSS", logo: css_logo },
               { name: "Figma", logo: figma_logo },
               { name: "MariaDB", logo: mariadb_logo },
             ],
@@ -363,15 +405,12 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: `The Letter Soup Generator is a web-based application built with Vue that allows users to create word search puzzles and export them in PDF format. Additionally, all generated puzzles can be stored in a Django-powered database, enabling users to access and review their previously created word searches.\n\nThe users are immediately presented with the Letter Soup Creator, where they can generate custom word search puzzles effortlessly. While an account is not required to create puzzles, registered users benefit from a history feature that lets them track and revisit their past creations.`,
             preview: [soup_1, soup_2, soup_3, soup_4, soup_5],
             languages: [
-              { name: "Python", logo: python_logo },
               { name: "HTML", logo: html_logo },
               { name: "CSS", logo: css_logo },
-              { name: "JavaScript", logo: js_logo },
               { name: "TypeScript", logo: ts_logo },
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Quasar", logo: quassar_logo },
               { name: "Postman", logo: postman_logo },
-              { name: "MariaDB", logo: mariadb_logo },
             ],
           },
           {
@@ -383,7 +422,6 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
               { name: "HTML", logo: html_logo },
               { name: "CSS", logo: css_logo },
               { name: "JavaScript", logo: js_logo },
-              { name: "TypeScript", logo: ts_logo },
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Postman", logo: postman_logo },
             ],
