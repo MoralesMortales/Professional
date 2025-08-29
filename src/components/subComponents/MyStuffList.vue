@@ -142,7 +142,14 @@ list-style-type: square;
 .btns {
   max-width: 150px;
   width: 10vw;
+  transition: all .13s ease;
 }
+
+.btns:hover{
+  opacity: .7;
+  transition: all .13s ease;
+}
+
   .title_po{
     font-size: clamp(1px,4.2vw,20px);
     line-height: 44px;

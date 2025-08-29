@@ -4,7 +4,7 @@
       <div class="w-full flex justify-center items-center lg:mb-60 h-full">
         <div class="w-full flex flex-col justify-center items-center lg:gap-12">
           <div class="lg:justify-center lg:items-center img_container">
-            <img class="rounded-full" style="border: 7px #67b9b5 solid; box-shadow: 0 0 20px #67b9b5"
+            <img class="rounded-full floating-img" style="border: 7px #67b9b5 solid; box-shadow: 0 0 20px #67b9b5"
               src="../../assets/Profile_Img/Profile_Picture.png" alt="" />
           </div>
           <div id="theTexts" class="flex flex-col items-center justify-center gap-6">
@@ -55,6 +55,23 @@
 
 .img_container {
   width: 21%;
+}
+
+/* Animación de flotación */
+.floating-img {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 #theH4 {
@@ -119,6 +136,23 @@
     font-size: 8vw;
     margin-bottom: 0;
     margin-top: 0px;
+  }
+  
+  /* Ajustar animación para dispositivos móviles */
+  .floating-img {
+    animation: floating 3.5s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 }
 </style>

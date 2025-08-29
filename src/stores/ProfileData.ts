@@ -124,20 +124,30 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             level: "C2 (Native)",
             logo: spanishLogo,
             img: spanishImg,
+            description:`Es mi lengua natal! Si existiese un nivel C3 en Español, sin duda seria mi nivel en este increible idioma.
+
+A pesar de ser criado con el Español Venezolano - Latinoamericano, soy capaz de entender otros acentos de Español sin problemas!`,
+
+
           },
-          { name: "English", level: "C1", logo: englishLogo, img: englishImg },
-          { name: "German", level: "B1", logo: germanLogo, img: germanImg },
+          { name: "English", level: "C1", logo: englishLogo, img: englishImg, description:`I've had learnt English 5 years ago until nowadays and everyday I learn new things about this wonderful language.
+
+It has been my first new language to learn after my native one language'` },
+          { name: "German", level: "B1", logo: germanLogo, img: germanImg ,             description:`Ich lerne seit einem Jahr Deutsch. Ich lerne manchmal neue Vokabeln und kann mich auf einfachem Niveau ausdrücken und sprechen. 
+
+Bald werde ich das C1-Niveau in dieser wunderbaren Sprache erreichen.`,
+},
         ],
 
         programming_languages: [
-          {
-            name: "C++",
-            logo: cpp_logo,
-            des: "C++ is a powerful, high-performance programming language used for system/software development, game development, and real-time applications.",
-            category: "Programming Language",
-            time: "4 Years",
-            used: ["Terminal To_Do_List"],
-          },
+          // {
+          //   name: "C++",
+          //   logo: cpp_logo,
+          //   des: "C++ is a powerful, high-performance programming language used for system/software development, game development, and real-time applications.",
+          //   category: "Programming Language",
+          //   time: "4 Years",
+          //   used: ["Terminal To_Do_List"],
+          // },
           {
             name: "PHP",
             logo: php_logo,
@@ -205,7 +215,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications with ease.",
             category: "Frontend Web Framework",
             time: "2 Years",
-            used: ["Letter's Soup"],
+            used: ["Letter's Soup","RecipeMaster","Pokegame","Portfolio"],
           },
 
           {
@@ -216,7 +226,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
 `,
             category: "Frontend Web Framework",
             time: "2 Years",
-            used: ["Letter's Soup"],
+            used: ["Paycheck Web Program"],
           },
           {
             name: "NodeJS",
@@ -226,7 +236,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
 `,
             category: "Backend Web Framework",
             time: "1 Years",
-            used: ["Letter's Soup"],
+            used: ["Paycheck Web Program"],
           },
           {
             name: "Laravel",
@@ -235,7 +245,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Laravel is a free, open-source toolkit (called a framework) for building modern web applications using the PHP programming language. Think of it as a pre-built foundation and a set of powerful, organized tools that help developers build websites and web apps faster, more securely, and with less repetitive code.",
             category: "Frontend Framework",
             time: "2 Years",
-            used: ["Letter's Soup"],
+            used: ["TrainSystem"],
           },
         ],
 
@@ -255,7 +265,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "MySQL is an open-source relational database management system (RDBMS) widely used for web applications, data storage, and enterprise solutions.",
             category: "Relational Database",
             time: "3 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["TrainSystem", "Paycheck Program", "Paycheck Web Program"],
           },
           {
             name: "MariaDB",
@@ -264,7 +274,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "MariaDB is a fork of MySQL that offers improved performance, security, and additional features while maintaining full compatibility with MySQL.",
             category: "Relational Database",
             time: "3 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["TrainSystem", "Paycheck Program", "Paycheck Web Program"],
           },
           {
             name: "SQLite",
@@ -273,15 +283,6 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "SQLite is a lightweight, file-based SQL database engine commonly used for embedded applications, mobile apps, and small-scale storage needs.",
             category: "Embedded Database",
             time: "2 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
-          },
-          {
-            name: "PostgreSQL",
-            link: "www.algo.com",
-            logo: postgre_logo,
-            des: "PostgreSQL is a powerful, open-source relational database system known for its advanced features, extensibility, and ACID compliance.",
-            category: "Relational Database",
-            time: "3 Years",
             used: ["Letter's Soup"],
           },
         ],
@@ -293,7 +294,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Bootstrap is a popular front-end framework that simplifies responsive web design with pre-built components, CSS utilities, and JavaScript plugins.",
             category: "CSS Framework",
             time: "2 Years",
-            used: [],
+            used: ["RecipeMaster"],
           },
           {
             name: "Pinia",
@@ -302,7 +303,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Pinia is the official state management library for Vue.js applications, designed to serve as a centralized store for all the dynamic data that needs to be shared across multiple components in your app. It solves the cumbersome problem of 'prop drilling' (passing data through many layers of components) by providing a global, reactive data source that any component can directly access or update, ensuring your application's state is predictable, organized, and easy to maintain as it scales.",
             category: "Vue.Js Library",
             time: "2 Years",
-            used: [],
+            used: ["Portfolio"],
           },
 
           {
@@ -312,7 +313,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Tailwind CSS is a utility-first CSS framework that allows developers to create modern and responsive designs quickly using utility classes.",
             category: "CSS Framework",
             time: "2 Years",
-            used: ["Letter's Soup"],
+            used: ["Letter's Soup", "Train System", "RecipeMaster", "Pokegame", "Portfolio"],
           },
           {
             name: "Postman",
@@ -321,7 +322,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Postman is an API development and testing tool that simplifies creating, testing, and managing APIs through a user-friendly interface.",
             category: "API Testing & Development",
             time: "2 Years",
-            used: ["Letter's Soup"],
+            used: ["RecipeMaster", "Letter's Soup"],
           },
           {
             name: "Quasar",
@@ -330,18 +331,21 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Quasar is a Vue.js-based framework for building responsive and high-performance web, mobile, and desktop applications using a single codebase.",
             category: "Vue Framework",
             time: "2 Years",
-            used: ["Letter's Soup"],
-          },
-          {
-            name: "Electron",
-            link: "www.algo.com",
-            logo: electron_logo,
-            des: "Electron is a framework that enables the development of cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript.",
-            category: "Desktop App Development",
-            time: "2 Years",
+            used: ["Letter's Soup", "Portfolio"],
           },
         ],
+
         toolsGeneral: [
+ {
+            name: "Docker",
+            link: "www.algo.com",
+            logo: docker_logo,
+            des: "Docker is a platform that uses OS-level virtualization to deliver software in standardized units called containers, which bundle an application's code together with its libraries and dependencies, allowing it to run quickly and reliably in any computing environment, from a developer's laptop to a production data center.",
+            category: "DevOps Tool",
+            time: "1 Year",
+            used: ["Paycheck Web Program"],
+          },
+
           {
             name: "Git",
             link: "www.algo.com",
@@ -349,7 +353,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Git is a distributed version control system that allows developers to track changes in their code, collaborate with teams, and manage project history efficiently.",
             category: "Version Control",
             time: "2 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["All of them"],
           },
           {
             name: "Github",
@@ -358,7 +362,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "GitHub is a cloud-based platform for hosting and managing Git repositories, enabling collaboration, issue tracking, and continuous integration/deployment.",
             category: "Version Control & Collaboration",
             time: "2 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["All of them"],
           },
           {
             name: "Bash",
@@ -367,7 +371,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Bash (Bourne Again Shell) is a Unix shell and command-line interface used for scripting and automating tasks in Linux and macOS environments.",
             category: "Scripting & Automation",
             time: "3 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["All of them as Terminal"],
           },
           {
             name: "Linux",
@@ -376,7 +380,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Linux is an open-source operating system known for its security, stability, and flexibility. It powers servers, desktops, and embedded systems worldwide.",
             category: "Operating System",
             time: "4 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["All of them using it as my primary OS"],
           },
           {
             name: "Windows",
@@ -385,7 +389,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Windows is a family of proprietary graphical operating systems developed and marketed by Microsoft, which provides a foundational software platform that manages a computer's hardware and software resources. ",
             category: "Operating System",
             time: "All my Life",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["Paycheck Program"],
           },
           {
             name: "Figma",
@@ -394,7 +398,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "Figma is a web-based design and prototyping tool that enables teams to collaborate in real time on UI/UX designs, wireframes, and prototypes.",
             category: "UI/UX Design",
             time: "2 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["All of them"],
           },
           {
             name: "Chat GPT",
@@ -403,7 +407,7 @@ export const useProfileDataStore = defineStore("useProfileDataStore", {
             des: "ChatGPT is an AI-powered chatbot developed by OpenAI that uses natural language processing to generate human-like responses for various applications, including customer support and content generation.",
             category: "Artificial Intelligence & NLP",
             time: "2 Years",
-            used: ["Letter's Soup", "Paycheck Program"],
+            used: ["All of them, using it as a tool to find out better possible estructures, methodologies, practices, etc"],
           },
         ],
 
@@ -469,7 +473,6 @@ For customers, it means booking a trip is as simple as a few clicks from their p
               { name: "MariaDB", logo: mariadb_logo },
             ],
           },
-
           {
             name: "Letters's Soup",
             access: true,
@@ -479,6 +482,9 @@ For customers, it means booking a trip is as simple as a few clicks from their p
             languages: [
               { name: "HTML", logo: html_logo },
               { name: "CSS", logo: css_logo },
+              { name: "Python", logo: python_logo },
+              { name: "Djando", logo: django_logo },
+              { name: "Vue.js", logo: vue_logo },
               { name: "TypeScript", logo: ts_logo },
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Quasar", logo: quassar_logo },
@@ -501,6 +507,7 @@ We built this to be super fast and easy to use, all with VueJs. It shows you cle
               { name: "Vue.Js", logo: vue_logo },
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Postman", logo: postman_logo },
+              { name: "Figma", logo: figma_logo },
             ],
           },
           {
@@ -515,6 +522,7 @@ We built this to be super fast and easy to use, all with VueJs. It shows you cle
               { name: "JavaScript", logo: js_logo },
               { name: "TailwindCSS", logo: tailwind_logo },
               { name: "Postman", logo: postman_logo },
+              { name: "Figma", logo: figma_logo },
             ],
           },
           {
