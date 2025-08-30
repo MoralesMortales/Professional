@@ -1,8 +1,15 @@
 <template>
   <section id="who_am_I" class="section pt-20 flex justify-center items-center">
     <div class="">
-      <article class="flex lg:gap-28 lg:p-5 text-black" style="margin-top: -60px" id="container">
-        <div class="w-full lg:ml-24 flex flex-col lg:gap-16 lg:pr-24" style="margin-bottom: -50px">
+      <article
+        class="flex lg:gap-28 lg:p-5 text-black"
+        style="margin-top: -60px"
+        id="container"
+      >
+        <div
+          class="w-full lg:ml-24 flex flex-col lg:gap-16 lg:pr-24"
+          style="margin-bottom: -50px"
+        >
           <h2 id="boutMe">ABOUT ME</h2>
           <div id="">
             <p id="theText" class="text-justify">
@@ -29,9 +36,15 @@
           </div>
         </div>
 
-        <div id="myContent" class="w-full lg:ml-24 lg:pr-24 flex justify-center items-center">
+        <div
+          id="myContent"
+          class="w-full lg:ml-24 lg:pr-24 flex justify-center items-center"
+        >
           <div class="lg:hidden">
-            <h4 id="myIn" class="mb-12 text-nowrap w-screen pl-4 lg:pl-0 lg:w-min">
+            <h4
+              id="myIn"
+              class="mb-12 text-nowrap w-screen pl-4 lg:pl-0 lg:w-min"
+            >
               My Interests
             </h4>
           </div>
@@ -40,7 +53,10 @@
             <div class="" id="Grid">
               <div class="box w-full flex h-full justify-center items-center">
                 <h4 class="w-full">SPORTS</h4>
-                <img src="../../assets/Profile_Img/Interest/exercise.png" alt="" />
+                <img
+                  src="../../assets/Profile_Img/Interest/exercise.png"
+                  alt=""
+                />
               </div>
               <div class="box w-full flex h-full justify-center items-center">
                 <h4 class="w-full">READING</h4>
@@ -48,11 +64,17 @@
               </div>
               <div class="box w-full flex h-full justify-center items-center">
                 <h4 class="w-full">PROGRAMMING</h4>
-                <img src="../../assets/Profile_Img/Interest/programming.png" alt="" />
+                <img
+                  src="../../assets/Profile_Img/Interest/programming.png"
+                  alt=""
+                />
               </div>
               <div class="box w-full flex h-full justify-center items-center">
                 <h4 class="w-full">LANGUAGES</h4>
-                <img src="../../assets/Profile_Img/Interest/languages.png" alt="" />
+                <img
+                  src="../../assets/Profile_Img/Interest/languages.png"
+                  alt=""
+                />
               </div>
               <div class="box w-full flex h-full justify-center items-center">
                 <h4 class="w-full">MUSIC</h4>
@@ -60,13 +82,19 @@
               </div>
               <div class="box w-full flex h-full justify-center items-center">
                 <h4 class="w-full">TRAVELING</h4>
-                <img src="../../assets/Profile_Img/Interest/travel.png" alt="" />
+                <img
+                  src="../../assets/Profile_Img/Interest/travel.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <div class="sndBox lg:w-1/2 second_boxM">
             <div class="lg:hidden">
-              <h4 id="myPe" class="mb-12 text-nowrap w-screen pl-4 lg:pl-0 lg:w-min">
+              <h4
+                id="myPe"
+                class="mb-12 text-nowrap w-screen pl-4 lg:pl-0 lg:w-min"
+              >
                 Personal Information
               </h4>
             </div>
@@ -108,17 +136,26 @@
                   <h4 class="b3">Job Status</h4>
                 </div>
                 <h4 class="b3 b4 free" style="">
-                  <span style="
+                  <span
+                    style="
                       background-color: #67b9b5;
                       padding-left: 10px;
                       padding-right: 10px;
-                    ">Freelance</span>
+                    "
+                    >Freelance</span
+                  >
                 </h4>
               </div>
 
-              <div class="bout download absolute lg:bottom-0 flex justify-center items-center lg:w-1/2">
-                <a href="/professional/cv.pdf" target="_blank" style="border: 1px rgba(0, 0, 0, 0.8) solid"
-                  class="a_corned bg-slate-200 w-full flex justify-center items-center">
+              <div
+                class="bout download absolute lg:bottom-0 flex justify-center items-center lg:w-1/2"
+              >
+                <a
+                  href="/professional/cv.pdf"
+                  target="_blank"
+                  style="border: 1px rgba(0, 0, 0, 0.8) solid"
+                  class="a_corned bg-slate-200 w-full flex justify-center items-center"
+                >
                   <h5 class="text-nowrap" id="download_text">Download CV</h5>
                 </a>
               </div>
@@ -164,14 +201,14 @@
   height: 9vw;
 }
 
-.box>h4 {
+.box > h4 {
   font-size: 1.4vw;
   padding-top: 5px;
   height: 2vw;
   text-align: center;
 }
 
-.box>img {
+.box > img {
   height: 6vw;
   padding: 10px 0;
 }
@@ -363,12 +400,12 @@
     height: 90%;
   }
 
-  .box>h4 {
+  .box > h4 {
     font-size: 3vw;
     margin-top: -10px;
   }
 
-  .box>img {
+  .box > img {
     height: 50%;
   }
 
@@ -397,7 +434,7 @@
     place-self: center;
   }
 
-  .download>a {
+  .download > a {
     padding: 0.91em 0;
     border-radius: 2px;
   }
@@ -432,11 +469,11 @@
   .b3 {
     font-size: clamp(1px, 3vw, 24px);
   }
-    .free > span{
+
+  .free > span {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
 }
 
 @media (max-width: 720px) {
@@ -487,12 +524,12 @@
     height: 100%;
   }
 
-  .box>h4 {
+  .box > h4 {
     font-size: 3vw;
     margin-top: -10px;
   }
 
-  .box>img {
+  .box > img {
     height: 50%;
   }
 
@@ -521,7 +558,7 @@
     place-self: center;
   }
 
-  .download>a {
+  .download > a {
     padding: 0.41em 0;
     border-radius: 2px;
   }
@@ -548,7 +585,8 @@
   .bout {
     align-items: center;
   }
-  .free > span{
+
+  .free > span {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -599,12 +637,12 @@
     height: 100%;
   }
 
-  .box>h4 {
+  .box > h4 {
     font-size: 3vw;
     margin-top: -10px;
   }
 
-  .box>img {
+  .box > img {
     height: 50%;
   }
 
@@ -633,7 +671,7 @@
     place-self: center;
   }
 
-  .download>a {
+  .download > a {
     padding: 0.41em 0;
     border-radius: 2px;
   }
@@ -654,6 +692,5 @@
   .bout {
     align-items: center;
   }
-
 }
 </style>

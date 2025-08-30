@@ -13,7 +13,7 @@
           </h5>
           <h6 class="des"><span class="font-bold">Diploma:</span> Software Engineer</h6>
           <h6 class="per">Period: <span> 2022 - 2026 (On progress)</span></h6>
-          <h6 class="per">Currently: 6<sup>th</sup> Semester (out of 8)</h6>
+          <h6 class="per">Currently: 7<sup>th</sup> Semester (out of 8)</h6>
         </div>
         <div class="box">
           <h5 class="title">
