@@ -178,7 +178,7 @@ Bald werde ich das C1-Niveau in dieser wunderbaren Sprache erreichen.`,
             des: "TypeScript is a superset of JavaScript that adds static typing, enhancing code maintainability and scalability.",
             category: "Programming Language",
             time: "2 Years",
-            used: ["Letter's Soup"],
+            used: ["Letter's Soup", "Portfolio"],
           },
           {
             name: "HTML5",
@@ -536,7 +536,7 @@ It was upload using the services of Github Pages, the url sohws this in the nave
 
             languages: [
               { name: "Vuejs", logo: vue_logo },
-              { name: "JavaScript", logo: js_logo },
+              { name: "TypeScript", logo: ts_logo },
               { name: "HTML", logo: html_logo },
               { name: "CSS", logo: css_logo },
               { name: "Pinia", logo: pinia_logo },
