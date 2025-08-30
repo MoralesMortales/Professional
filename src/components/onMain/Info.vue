@@ -1,5 +1,11 @@
 <template>
   <div class=" text-black">
+
+      <div class="flex my-10 gap-10 justify-center items-center btns">
+          <button class="btn" @click='option = 0' :style="option == 1 ? { backgroundColor: 'rgba(255,255,255,.7)' } : { backgroundColor: '#67B9B5' } ">Education</button>
+        <button class="btn" @click='option = 1' :style="option == 0 ? { backgroundColor: 'rgba(255,255,255,.7)' } : { backgroundColor: '#67B9B5' } ">Experience</button>
+      </div>
+
     <section v-if="option == 0">
     <div class="h-32 flex justify-center items-center">
       <h5>Education</h5>
@@ -48,15 +54,12 @@
           <h6 class="per">Period: <span> 2022 - 2024</span></h6>
         </div>
 
-        <div class="w-full flex justify-center flex-nowrap text-nowrap mb-10">
-          <a href="www.linkedin.com/in/carlos-morales-987974262" class="w-min text-lg font-bold">Find more on my LinkedIn</a>
+        <div class="w-full flex justify-center text-cyan-800 flex-nowrap text-nowrap mb-16">
+          <a href="https://www.linkedin.com/in/carlos-morales-987974262" class="w-min text-lg font-bold">Find more on my LinkedIn</a>
         </div>
       </div>
 
-      <div class="flex my-10 gap-10 justify-center items-center btns">
-          <button class="btn" @click='option = 0' :style="option == 1 ? { backgroundColor: 'rgba(255,255,255,.7)' } : { backgroundColor: '#67B9B5' } ">Education</button>
-        <button class="btn" @click='option = 1' :style="option == 0 ? { backgroundColor: 'rgba(255,255,255,.7)' } : { backgroundColor: 'rgba(255,255,255,.7)' } ">Experience</button>
-      </div>
+
     </div>
     </section>
     <section v-if="option == 1">
