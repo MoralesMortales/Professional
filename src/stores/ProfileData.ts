@@ -9,7 +9,7 @@ import englishImg from "../assets/Img/English_Image.png";
 import germanImg from "../assets/Img/german_image.jpeg";
 
 //pg languages
-import cpp_logo from "../assets/Img/cpp_logo.png";
+//import cpp_logo from "../assets/Img/cpp_logo.png";
 import python_logo from "../assets/Img/python_logo.png";
 import js_logo from "../assets/Img/js.png";
 import ts_logo from "../assets/Img/ts.png";
@@ -29,7 +29,7 @@ import pyqt from "../assets/Img/pyqt.png";
 
 //databases
 import mysql_logo from "../assets/Img/mysql_logo.png";
-import postgre_logo from "../assets/Img/Postgresql_elephant_logo.png";
+//import postgre_logo from "../assets/Img/Postgresql_elephant_logo.png";
 import sqlite_logo from "../assets/Img/sqlite_logo.png";
 import mariadb_logo from "../assets/Img/mariadb_logo.png";
 
@@ -38,7 +38,7 @@ import postman_logo from "../assets/Img/postman.png";
 import tailwind_logo from "../assets/Img/tailwind_logo.png";
 import boostrap_logo from "../assets/Img/bootstrap.png";
 import quassar_logo from "../assets/Img/quassar_logo.png";
-import electron_logo from "../assets/Img/electron_logo.png";
+//import electron_logo from "../assets/Img/electron_logo.png";
 
 //tools general
 import bash_logo from "../assets/Img/bash_logo.png";
@@ -46,7 +46,7 @@ import git_logo from "../assets/Img/git_logo.png";
 import github_logo from "../assets/Img/github_logo.png";
 import figma_logo from "../assets/Img/figma_logo.png";
 import gpt_logo from "../assets/Img/gpt_logo.png";
-import trello_logo from "../assets/Img/trello_logo.png";
+//import trello_logo from "../assets/Img/trello_logo.png";
 import linux_logo from "../assets/Img/linulogo.png";
 import windows_logo from "../assets/Img/windows_logo.png";
 
