@@ -9,7 +9,7 @@
           </div>
           <div id="theTexts" class="flex flex-col items-center justify-center gap-6">
             <h4 id="theH4">CARLOS MORALES</h4>
-            <h5 id="theH5">Full-Stack Programmer</h5>
+            <h5 id="theH5">Software Engineer</h5>
 
             <div class="flex mt-3 justify-around w-full">
               <a href="https://github.com/MoralesMortales">
@@ -80,6 +80,7 @@
 
 #theH5 {
   font-size: 3vw;
+  margin-top: 8px;
 }
 
 @media (max-width: 1024px) {
