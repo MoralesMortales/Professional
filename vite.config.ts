@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: 'https://moralesmortales.github.io/professional',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
