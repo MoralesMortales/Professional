@@ -1,3 +1,5 @@
+
+
 <template>
   <footer class="footer-section">
     <div class="container">
@@ -29,7 +31,7 @@
           <h4 class="footer-title">{{ t.navigation }}</h4>
           <ul class="footer-links">
             <li v-for="link in navLinks" :key="link.key">
-              <a :href="link.href" class="footer-link">{{ t[link.key] }}</a>
+              <a :href="link.href" class="footer-link">{{ (t as any)[link.key] }}</a>
             </li>
           </ul>
         </div>
@@ -99,6 +101,8 @@
     </div>
   </footer>
 </template>
+
+
 
 <script setup lang="ts">
 import { computed } from 'vue'

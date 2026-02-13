@@ -30,7 +30,8 @@
                 :class="{ 'is-active': techStore.activeTech === tech.name }"
                 @click="techStore.handleTechClick(tech.name)"
               >
-                <img :src="tech.logo" :alt="tech.name" :class="{ 'dark-inv': tech.invert }" class="tech-img" />
+                <img :src="tech.logo" :class="{ 'dark-invert': tech.invert }"
+ :alt="tech.name" class="tech-img" />
                 <span class="tech-name">{{ tech.name }}</span>
                 
                 <div v-if="techStore.activeTech === tech.name" class="click-ring"></div>
@@ -74,12 +75,17 @@ const features = computed(() => [
   {
     title: t.value.designMindset,
     text: t.value.designMindsetDesc,
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>`
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+</svg>`
   },
   {
     title: t.value.fastLearner,
     text: t.value.fastLearnerDesc,
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>`
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+</svg>`
   },
   {
     title: t.value.teamPlayer,
@@ -496,5 +502,21 @@ const expertiseSkills = computed(() => [
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
   }
+}
+/* Estilo base para todas las imágenes */
+.tech-img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+}
+
+/* Inversión solo en modo oscuro y solo para elementos con dark-invert */
+.dark-theme .tech-img.dark-invert {
+  filter: brightness(0) invert(1);
+}
+
+/* Opcional: ajuste suave para otros logos en modo oscuro */
+.dark-theme .tech-img:not(.dark-invert) {
+  filter: brightness(0.9);
 }
 </style>

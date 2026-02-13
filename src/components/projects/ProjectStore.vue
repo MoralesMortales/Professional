@@ -150,9 +150,9 @@
                   :key="index"
                   class="thumbnail"
                   :class="{ active: currentImageIndex === index }"
-                  @click="setCurrentImage(index)"
+                  @click="setCurrentImage(Number(index))"
                 >
-                  <img :src="image" :alt="`${activeProject.alt} - ${index + 1}`" />
+                  <img :src="image" :alt="`${activeProject.alt} - ${Number(index) + 1}`" />
                 </div>
               </div>
             </div>
