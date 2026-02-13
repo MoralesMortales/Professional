@@ -271,6 +271,8 @@ Object.assign(formData, {
   grid-template-columns: 1fr 1.3fr; /* Formulario más ancho que la info */
   gap: 50px; /* Aumentado de 40px a 50px */
   align-items: start;
+ 
+  
 }
 
 /* Contact Info Styles */

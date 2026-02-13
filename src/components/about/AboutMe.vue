@@ -292,6 +292,7 @@ const expertiseSkills = computed(() => [
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .section-header {

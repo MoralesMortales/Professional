@@ -87,12 +87,15 @@ const openCV = () => {
   text-align: center;
   transition: all 0.5s ease;
   padding: 0 20px;
+  margin-top: 70px;
   background: radial-gradient(circle at center, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   color: var(--text-primary);
 }
 
 .hero-content {
   max-width: 700px;
+  margin-top: 170px;
+  margin-bottom: 90px;
 }
 
 .profile-wrapper {

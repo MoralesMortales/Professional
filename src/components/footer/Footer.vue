@@ -416,6 +416,29 @@ const socialLinks = [
   .contact-item {
     justify-content: center;
   }
+    .footer-col:not(.brand-col):not(:last-child) {
+    text-align: center;
+  }
+  
+  .footer-col:not(.brand-col):not(:last-child) .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-col:not(.brand-col):not(:last-child) .footer-link:hover {
+    transform: translateX(0) translateY(-2px);
+  }
+  
+  .footer-col:not(.brand-col):not(:last-child) .footer-link::before {
+    display: none; /* Ocultar la flecha cuando está centrado */
+  }
+  
+  /* Ajustar el pseudo-elemento after del título */
+  .footer-col:not(.brand-col):not(:last-child) .footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 480px) {
@@ -425,6 +448,7 @@ const socialLinks = [
   
   .footer-brand {
     font-size: 1.4rem;
+    
   }
   
   .language-selector {
