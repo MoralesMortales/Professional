@@ -1059,6 +1059,20 @@ const handleSeeMore = () => {
 }
 
 @media (max-width: 768px) {
+   .modal-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .modal-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  /* También ocultar scrollbar del body cuando el modal está abierto */
+  body.modal-open {
+    overflow: hidden;
+  }
+  
   .projects-section {
     padding: 60px 20px;
   }
