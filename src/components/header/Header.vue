@@ -22,9 +22,9 @@ const scrollToSection = (sectionId: string) => {
 const openCV = () => {
   // Definir las rutas de los CVs según idioma
   const cvPaths = {
-    en: '/CarlosMoralesCV_en.pdf',
-    es: '/CarlosMoralesCV_es.pdf',
-    de: '/CarlosMoralesCV_de.pdf'
+    en: '/professional/CarlosMoralesCV_en.pdf',
+    es: '/professional/CarlosMoralesCV_es.pdf',
+    de: '/professional/CarlosMoralesCV_de.pdf'
   };
   
   // Obtener el idioma actual o usar inglés por defecto
